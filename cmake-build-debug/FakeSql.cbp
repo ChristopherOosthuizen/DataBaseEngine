@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.h">
+			<Option target="FakeSql"/>
+		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.cpp">
 			<Option target="FakeSql"/>
 		</Unit>

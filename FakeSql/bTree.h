@@ -8,30 +8,18 @@
 
 template <class T>
 class bTreeNode{
+public:
  T *m_keys;
  int m_maxKeys;
  bTreeNode **m_children;
  int m_currKeyCount;
  bool leaf;
-public:
     bTreeNode(int _t,bool _leaf);
     void traverse();
     bTreeNode *search(T k);
     void splitChild(int i, bTreeNode *y);
     void insertNonFull(T key);
     bool isGreaterThanKey(int i,T key);
-    friend class BTree;
-};
-class BTree{
-    bTreeNode<int> *root;
-    int t;
-public:
-    explicit BTree(int _t){root = NULL; t = _t;};
-    void traverse();
-    bTreeNode<int>* search(int k){return (root == NULL)?NULL : root->search(k);};
-    void insert(int key);
-
-
 };
 
 

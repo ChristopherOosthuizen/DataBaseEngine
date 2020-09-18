@@ -34,32 +34,6 @@ bTreeNode<T> *bTreeNode<T>::search(T key) {
         return NULL;
     return m_children[i]->search(key);
 }
-void BTree::insert(int key){
-    if(root ==NULL){
-        root = new bTreeNode<int>(t,true);
-        root->m_keys[0] =key;
-        root->m_currKeyCount = 1;
-
-    }else{
-        if(root->m_currKeyCount ==2*t-1){
-            auto s = new bTreeNode<int>(t,false);
-            s->m_children[0] = root;
-            s->splitChild(0,root);
-            int i=0;
-            if(!s->isGreaterThanKey(0,key))
-                i++;
-            s->m_children[i]->insertNonFull(key);
-
-            root = s;
-        }else
-            root->insertNonFull(key);
-    }
-}
-
-void BTree::traverse() {
-    if(root != NULL)
-    root->traverse();
-}
 
 template <class T>
 void bTreeNode<T>::insertNonFull(T key) {
