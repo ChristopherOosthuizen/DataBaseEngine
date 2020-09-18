@@ -1,0 +1,3 @@
+C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/CMakeFiles/FakeSql.dir
+C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/CMakeFiles/rebuild_cache.dir
