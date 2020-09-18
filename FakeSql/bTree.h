@@ -16,18 +16,17 @@ class bTreeNode{
 public:
     bTreeNode(int _t,bool _leaf);
     void traverse();
-    bTreeNode *search(int k);
+    bTreeNode *search(T k);
     void splitChild(int i, bTreeNode *y);
-    void insertNonFull(int key);
-    bool isGreaterThanKey(int i,int key);
+    void insertNonFull(T key);
+    bool isGreaterThanKey(int i,T key);
     friend class BTree;
 };
-
 class BTree{
     bTreeNode<int> *root;
     int t;
 public:
-    BTree(int _t){root = NULL; t = _t;};
+    explicit BTree(int _t){root = NULL; t = _t;};
     void traverse();
     bTreeNode<int>* search(int k){return (root == NULL)?NULL : root->search(k);};
     void insert(int key);

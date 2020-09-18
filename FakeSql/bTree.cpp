@@ -24,7 +24,7 @@ void bTreeNode<T>::traverse() {
         m_children[i]->traverse();
 }
 template <class T>
-bTreeNode<T> *bTreeNode<T>::search(int key) {
+bTreeNode<T> *bTreeNode<T>::search(T key) {
     int i=0;
     while(i <m_currKeyCount && !isGreaterThanKey(i,key))
         i++;
@@ -34,7 +34,6 @@ bTreeNode<T> *bTreeNode<T>::search(int key) {
         return NULL;
     return m_children[i]->search(key);
 }
-
 void BTree::insert(int key){
     if(root ==NULL){
         root = new bTreeNode<int>(t,true);
@@ -63,7 +62,7 @@ void BTree::traverse() {
 }
 
 template <class T>
-void bTreeNode<T>::insertNonFull(int key) {
+void bTreeNode<T>::insertNonFull(T key) {
     int i = m_currKeyCount-1;
     if(leaf){
         while(i>=0 && isGreaterThanKey(i,key)){
@@ -84,7 +83,8 @@ void bTreeNode<T>::insertNonFull(int key) {
     }
 }
 template <class T>
-bool bTreeNode<T>::isGreaterThanKey(int i, int key) {
+bool bTreeNode<T>::isGreaterThanKey(int i, T key) {
+
     return m_keys[i] > key;
 }
 template <class T>

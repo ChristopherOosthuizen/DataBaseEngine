@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.cpp
-bTree.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h
-stdlib.h
--
-
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h
 iostream
 -
