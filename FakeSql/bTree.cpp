@@ -4,15 +4,16 @@
 
 #include "bTree.h"
 #include <stdlib.h>
-
-bTreeNode::bTreeNode(int p_maxKeys, bool _leaf){
+template <class T>
+bTreeNode<T>::bTreeNode(int p_maxKeys, bool _leaf){
     m_maxKeys = p_maxKeys;
     leaf = _leaf;
     m_keys = new int[2*m_maxKeys-1];
     m_children = new bTreeNode *[2*m_maxKeys];
     m_currKeyCount =0;
 }
-void bTreeNode::traverse() {
+template <class T>
+void bTreeNode<T>::traverse() {
     int i;
     for(i =0; i<m_currKeyCount;i++){
         if(!leaf)
@@ -22,7 +23,8 @@ void bTreeNode::traverse() {
     if(!leaf)
         m_children[i]->traverse();
 }
-bTreeNode *bTreeNode::search(int key) {
+template <class T>
+bTreeNode<T> *bTreeNode<T>::search(int key) {
     int i=0;
     while(i <m_currKeyCount && !isGreaterThanKey(i,key))
         i++;
@@ -35,13 +37,13 @@ bTreeNode *bTreeNode::search(int key) {
 
 void BTree::insert(int key){
     if(root ==NULL){
-        root = new bTreeNode(t,true);
+        root = new bTreeNode<int>(t,true);
         root->m_keys[0] =key;
         root->m_currKeyCount = 1;
 
     }else{
         if(root->m_currKeyCount ==2*t-1){
-            auto s = new bTreeNode(t,false);
+            auto s = new bTreeNode<int>(t,false);
             s->m_children[0] = root;
             s->splitChild(0,root);
             int i=0;
@@ -54,7 +56,14 @@ void BTree::insert(int key){
             root->insertNonFull(key);
     }
 }
-void bTreeNode::insertNonFull(int key) {
+
+void BTree::traverse() {
+    if(root != NULL)
+    root->traverse();
+}
+
+template <class T>
+void bTreeNode<T>::insertNonFull(int key) {
     int i = m_currKeyCount-1;
     if(leaf){
         while(i>=0 && isGreaterThanKey(i,key)){
@@ -74,10 +83,12 @@ void bTreeNode::insertNonFull(int key) {
         m_children[i+1]->insertNonFull(key);
     }
 }
-bool bTreeNode::isGreaterThanKey(int i, int key) {
+template <class T>
+bool bTreeNode<T>::isGreaterThanKey(int i, int key) {
     return m_keys[i] > key;
 }
-void bTreeNode::splitChild(int i, bTreeNode *y) {
+template <class T>
+void bTreeNode<T>::splitChild(int i, bTreeNode *y) {
     auto *z = new bTreeNode(y->m_maxKeys, y->leaf);
     z->m_currKeyCount = m_maxKeys-1;
     for(int j=0; j< m_maxKeys-1;j++){

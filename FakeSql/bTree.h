@@ -6,9 +6,9 @@
 #define FAKESQL_BTREE_H
 #include<iostream>
 
-
+template <class T>
 class bTreeNode{
- int *m_keys;
+ T *m_keys;
  int m_maxKeys;
  bTreeNode **m_children;
  int m_currKeyCount;
@@ -24,12 +24,12 @@ public:
 };
 
 class BTree{
-    bTreeNode *root;
+    bTreeNode<int> *root;
     int t;
 public:
     BTree(int _t){root = NULL; t = _t;};
-    void traverse(){if (root !=NULL) root->traverse();};
-    bTreeNode* search(int k){return (root == NULL)?NULL : root->search(k);};
+    void traverse();
+    bTreeNode<int>* search(int k){return (root == NULL)?NULL : root->search(k);};
     void insert(int key);
 
 
