@@ -8,12 +8,15 @@
 #include <string>
 #include "bTree.h"
 enum class DataType{INT,STRING,BOOL};
+class DataSlot;
+class bTree;
 class Model {
 
     std::string m_name;
-    std::map<const std::string&, DataSlot*> *m_values;
+    std::map<std::string, DataSlot *>* m_values;
 public:
-    Model(const std::string& str,  std::map<const std::string*,const std::string&>* temp);
+
+    Model(const std::string& str,  std::map< std::string,std::string>* temp);
     friend class DataSlot;
 };
 
@@ -21,14 +24,15 @@ public:
 
 class DataSlot{
     DataType m_type;
-    std::map<const std::string&, bTree*>* m_searchTrees;
+    std::map<std::string, DataSlot*> m_searchTrees;
 public:
     DataSlot(const std::string& str);
     DataType findType(const std::string& str);
+
     friend class DataObject;
 };
 
-class DataObject{
+struct DataObject{
     std::map<std::string,void*> m_values;
     DataType m_type;
 };

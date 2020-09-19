@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.cpp
+BTreeAct.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
 bTree.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
@@ -14,8 +18,12 @@ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
 Model.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
 
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp
+Model.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
-Map
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+map
 -
 string
 -

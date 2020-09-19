@@ -3,9 +3,9 @@
 //
 
 #include "Model.h"
-Model::Model(const std::string& str,  std::map<const std::string*,const std::string&>* temp){
+Model::Model(const std::string& str,  std::map<std::string,std::string>* temp){
     m_name = str;
-    m_values = new std::map<const std::string&, DataSlot*>*;
+    m_values = new std::map<std::string, DataSlot*>();
     for(auto it = temp->begin();it != temp->end();it++){
         (*m_values)[it->first] = new DataSlot(it->second);
     }
@@ -13,7 +13,7 @@ Model::Model(const std::string& str,  std::map<const std::string*,const std::str
 
 DataSlot::DataSlot(const std::string &str) {
     m_type = findType(str);
-    m_searchTrees = new std::map<const std::string&, DataSlot*>*;
+    m_searchTrees =  std::map<std::string, DataSlot*>();
 }
 
 DataType DataSlot::findType(const std::string &str) {
