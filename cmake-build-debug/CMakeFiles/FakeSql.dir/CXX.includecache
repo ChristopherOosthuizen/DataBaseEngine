@@ -6,29 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.cpp
-BTreeAct.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.h
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
 bTree.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 bTree.cpp
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.cpp
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
+Model.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.cpp
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+Map
+-
+string
+-
 bTree.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
+bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 stdlib.h
 -
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 iostream
 -
+Model.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
 
 C:/Users/Chris/CLionProjects/FakeSql/main.cpp
 iostream
 -
-FakeSql/BTreeAct.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.h
+FakeSql/Model/BTreeAct.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+string
+-
 

@@ -5,7 +5,8 @@
 #ifndef FAKESQL_BTREE_H
 #define FAKESQL_BTREE_H
 #include<iostream>
-
+#include "Model.h"
+class DataObject;
 template <class T>
 class bTreeNode{
 public:
@@ -14,12 +15,13 @@ public:
  bTreeNode **m_children;
  int m_currKeyCount;
  bool leaf;
-    bTreeNode(int _t,bool _leaf);
+ DataObject *m_object;
+public:
+    bTreeNode(int _t,bool _leaf,DataObject* object);
     void traverse();
     bTreeNode *search(T k);
     void splitChild(int i, bTreeNode *y);
     void insertNonFull(T key);
-    bool isGreaterThanKey(int i,T key);
 };
 
 

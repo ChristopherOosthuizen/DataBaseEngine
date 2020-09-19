@@ -127,59 +127,86 @@ FakeSql\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\build
 .PHONY : FakeSql\fast
 
-FakeSql\BTreeAct.obj: FakeSql\BTreeAct.cpp.obj
+FakeSql\Model\BTreeAct.obj: FakeSql\Model\BTreeAct.cpp.obj
 
-.PHONY : FakeSql\BTreeAct.obj
-
-# target to build an object file
-FakeSql\BTreeAct.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\BTreeAct.cpp.obj
-.PHONY : FakeSql\BTreeAct.cpp.obj
-
-FakeSql\BTreeAct.i: FakeSql\BTreeAct.cpp.i
-
-.PHONY : FakeSql\BTreeAct.i
-
-# target to preprocess a source file
-FakeSql\BTreeAct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\BTreeAct.cpp.i
-.PHONY : FakeSql\BTreeAct.cpp.i
-
-FakeSql\BTreeAct.s: FakeSql\BTreeAct.cpp.s
-
-.PHONY : FakeSql\BTreeAct.s
-
-# target to generate assembly for a file
-FakeSql\BTreeAct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\BTreeAct.cpp.s
-.PHONY : FakeSql\BTreeAct.cpp.s
-
-FakeSql\bTree.obj: FakeSql\bTree.cpp.obj
-
-.PHONY : FakeSql\bTree.obj
+.PHONY : FakeSql\Model\BTreeAct.obj
 
 # target to build an object file
-FakeSql\bTree.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\bTree.cpp.obj
-.PHONY : FakeSql\bTree.cpp.obj
+FakeSql\Model\BTreeAct.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj
+.PHONY : FakeSql\Model\BTreeAct.cpp.obj
 
-FakeSql\bTree.i: FakeSql\bTree.cpp.i
+FakeSql\Model\BTreeAct.i: FakeSql\Model\BTreeAct.cpp.i
 
-.PHONY : FakeSql\bTree.i
+.PHONY : FakeSql\Model\BTreeAct.i
 
 # target to preprocess a source file
-FakeSql\bTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\bTree.cpp.i
-.PHONY : FakeSql\bTree.cpp.i
+FakeSql\Model\BTreeAct.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.i
+.PHONY : FakeSql\Model\BTreeAct.cpp.i
 
-FakeSql\bTree.s: FakeSql\bTree.cpp.s
+FakeSql\Model\BTreeAct.s: FakeSql\Model\BTreeAct.cpp.s
 
-.PHONY : FakeSql\bTree.s
+.PHONY : FakeSql\Model\BTreeAct.s
 
 # target to generate assembly for a file
-FakeSql\bTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\bTree.cpp.s
-.PHONY : FakeSql\bTree.cpp.s
+FakeSql\Model\BTreeAct.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.s
+.PHONY : FakeSql\Model\BTreeAct.cpp.s
+
+FakeSql\Model\Model.obj: FakeSql\Model\Model.cpp.obj
+
+.PHONY : FakeSql\Model\Model.obj
+
+# target to build an object file
+FakeSql\Model\Model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj
+.PHONY : FakeSql\Model\Model.cpp.obj
+
+FakeSql\Model\Model.i: FakeSql\Model\Model.cpp.i
+
+.PHONY : FakeSql\Model\Model.i
+
+# target to preprocess a source file
+FakeSql\Model\Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.i
+.PHONY : FakeSql\Model\Model.cpp.i
+
+FakeSql\Model\Model.s: FakeSql\Model\Model.cpp.s
+
+.PHONY : FakeSql\Model\Model.s
+
+# target to generate assembly for a file
+FakeSql\Model\Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.s
+.PHONY : FakeSql\Model\Model.cpp.s
+
+FakeSql\Model\bTree.obj: FakeSql\Model\bTree.cpp.obj
+
+.PHONY : FakeSql\Model\bTree.obj
+
+# target to build an object file
+FakeSql\Model\bTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj
+.PHONY : FakeSql\Model\bTree.cpp.obj
+
+FakeSql\Model\bTree.i: FakeSql\Model\bTree.cpp.i
+
+.PHONY : FakeSql\Model\bTree.i
+
+# target to preprocess a source file
+FakeSql\Model\bTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.i
+.PHONY : FakeSql\Model\bTree.cpp.i
+
+FakeSql\Model\bTree.s: FakeSql\Model\bTree.cpp.s
+
+.PHONY : FakeSql\Model\bTree.s
+
+# target to generate assembly for a file
+FakeSql\Model\bTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.s
+.PHONY : FakeSql\Model\bTree.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -217,12 +244,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... FakeSql
-	@echo ... FakeSql/BTreeAct.obj
-	@echo ... FakeSql/BTreeAct.i
-	@echo ... FakeSql/BTreeAct.s
-	@echo ... FakeSql/bTree.obj
-	@echo ... FakeSql/bTree.i
-	@echo ... FakeSql/bTree.s
+	@echo ... FakeSql/Model/BTreeAct.obj
+	@echo ... FakeSql/Model/BTreeAct.i
+	@echo ... FakeSql/Model/BTreeAct.s
+	@echo ... FakeSql/Model/Model.obj
+	@echo ... FakeSql/Model/Model.i
+	@echo ... FakeSql/Model/Model.s
+	@echo ... FakeSql/Model/bTree.obj
+	@echo ... FakeSql/Model/bTree.i
+	@echo ... FakeSql/Model/bTree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

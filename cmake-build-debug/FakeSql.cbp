@@ -84,16 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.cpp">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.cpp">
 			<Option target="FakeSql"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/BTreeAct.h">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h">
 			<Option target="FakeSql"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.cpp">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp">
 			<Option target="FakeSql"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/bTree.h">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h">
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/main.cpp">
