@@ -90,6 +90,12 @@
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h">
 			<Option target="FakeSql"/>
 		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h">
+			<Option target="FakeSql"/>
+		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp">
 			<Option target="FakeSql"/>
 		</Unit>

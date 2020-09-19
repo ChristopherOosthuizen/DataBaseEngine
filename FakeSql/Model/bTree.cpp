@@ -5,7 +5,7 @@
 #include "bTree.h"
 #include <stdlib.h>
 template <class T>
-bTreeNode<T>::bTreeNode(int p_maxKeys, bool _leaf, DataObject* object){
+bTreeNode<T>::bTreeNode(int p_maxKeys, bool _leaf, void* object){
     m_object = (object);
     m_maxKeys = p_maxKeys;
     leaf = _leaf;

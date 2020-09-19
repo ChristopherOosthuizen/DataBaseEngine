@@ -4,19 +4,30 @@
 CMakeFiles/FakeSql.dir/FakeSql/Model/BTreeAct.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+CMakeFiles/FakeSql.dir/FakeSql/Model/DataSlot.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.cpp
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 CMakeFiles/FakeSql.dir/main.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
