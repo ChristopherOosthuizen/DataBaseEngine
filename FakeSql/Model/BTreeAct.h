@@ -6,7 +6,6 @@
 #define FAKESQL_BTREEACT_H
 #include "bTree.h"
 #include "bTree.cpp"
-#include "Model.h"
 template <typename T>
 class BTree{
     bTreeNode<T> *root;

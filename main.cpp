@@ -1,24 +1,32 @@
 #include <iostream>
-#include "FakeSql/Model/BTreeAct.h"
-#include <string>
-int main() {
-    BTree<std::string> t(4);
-    t.insert("hello",  NULL);
-    t.insert("h",NULL);
-    t.insert("abc",NULL);
-    t.insert("death",NULL);
-    t.insert("to",NULL);
-    t.insert("the",NULL);
-    t.insert("living",NULL);
-    t.insert("a",NULL);
-    t.insert("b",NULL);
-    t.insert("c",NULL);
-    t.insert("xxx",NULL);
-    t.insert("lll",NULL);
-    t.insert("mmm",NULL);
-    t.insert("nnn",NULL);
-    t.insert("rrr",NULL);
-    t.insert("6454",NULL);
-    t.traverse();
-    return 0;
+#include "FakeSql/Parser/Parser.h"
+
+
+void readLine(string* str){
+    char c=0;
+    int isMultiLine =0;
+    while(c !='\n'|| isMultiLine){
+        c = (char)getchar();
+        str->push_back(c);
+        if(c =='{'){
+            isMultiLine = 1;
+        }else if(c == '}')
+            isMultiLine =0;
+    }
 }
+
+int main() {
+    string* input = new string;
+    do{
+        std::cout << ">";
+        readLine(input);
+        Parser parser(input);
+        while(!parser.isDone()){
+            Token* token = parser.next();
+            token->toString();
+            delete token;
+        }
+    }while(input->compare(":q"));
+    delete input;
+}
+

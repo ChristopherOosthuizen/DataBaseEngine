@@ -3,32 +3,15 @@
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\BTreeAct.cpp
 CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\BTreeAct.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\DataSlot.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\Model.h
 CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\bTree.cpp
 CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.obj: ..\FakeSql\Model\bTree.h
-
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\BTreeAct.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\DataSlot.cpp
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\DataSlot.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\Model.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\bTree.cpp
-CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj: ..\FakeSql\Model\bTree.h
-
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\BTreeAct.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\DataSlot.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\Model.cpp
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\Model.h
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\bTree.cpp
-CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\bTree.h
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj: ..\FakeSql\Model\bTree.cpp
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj: ..\FakeSql\Model\bTree.h
 
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\BTreeAct.h
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\DataSlot.h
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\Model.h
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\bTree.cpp
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\bTree.h
+CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj: ..\FakeSql\Parser\Parser.cpp
+CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj: ..\FakeSql\Parser\Parser.h
+
+CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Parser\Parser.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\main.cpp
 

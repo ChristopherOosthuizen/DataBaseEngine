@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FakeSql.dir/FakeSql/Model/BTreeAct.cpp.obj"
-  "CMakeFiles/FakeSql.dir/FakeSql/Model/DataSlot.cpp.obj"
-  "CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj"
   "CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj"
+  "CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj"
   "CMakeFiles/FakeSql.dir/main.cpp.obj"
   "FakeSql.exe"
   "FakeSql.exe.manifest"

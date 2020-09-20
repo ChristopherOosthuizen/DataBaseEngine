@@ -90,22 +90,16 @@
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h">
 			<Option target="FakeSql"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.cpp">
-			<Option target="FakeSql"/>
-		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataSlot.h">
-			<Option target="FakeSql"/>
-		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp">
-			<Option target="FakeSql"/>
-		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h">
-			<Option target="FakeSql"/>
-		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp">
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h">
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/main.cpp">

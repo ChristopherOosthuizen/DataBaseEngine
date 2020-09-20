@@ -154,60 +154,6 @@ FakeSql\Model\BTreeAct.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\BTreeAct.cpp.s
 .PHONY : FakeSql\Model\BTreeAct.cpp.s
 
-FakeSql\Model\DataSlot.obj: FakeSql\Model\DataSlot.cpp.obj
-
-.PHONY : FakeSql\Model\DataSlot.obj
-
-# target to build an object file
-FakeSql\Model\DataSlot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.obj
-.PHONY : FakeSql\Model\DataSlot.cpp.obj
-
-FakeSql\Model\DataSlot.i: FakeSql\Model\DataSlot.cpp.i
-
-.PHONY : FakeSql\Model\DataSlot.i
-
-# target to preprocess a source file
-FakeSql\Model\DataSlot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.i
-.PHONY : FakeSql\Model\DataSlot.cpp.i
-
-FakeSql\Model\DataSlot.s: FakeSql\Model\DataSlot.cpp.s
-
-.PHONY : FakeSql\Model\DataSlot.s
-
-# target to generate assembly for a file
-FakeSql\Model\DataSlot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataSlot.cpp.s
-.PHONY : FakeSql\Model\DataSlot.cpp.s
-
-FakeSql\Model\Model.obj: FakeSql\Model\Model.cpp.obj
-
-.PHONY : FakeSql\Model\Model.obj
-
-# target to build an object file
-FakeSql\Model\Model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj
-.PHONY : FakeSql\Model\Model.cpp.obj
-
-FakeSql\Model\Model.i: FakeSql\Model\Model.cpp.i
-
-.PHONY : FakeSql\Model\Model.i
-
-# target to preprocess a source file
-FakeSql\Model\Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.i
-.PHONY : FakeSql\Model\Model.cpp.i
-
-FakeSql\Model\Model.s: FakeSql\Model\Model.cpp.s
-
-.PHONY : FakeSql\Model\Model.s
-
-# target to generate assembly for a file
-FakeSql\Model\Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.s
-.PHONY : FakeSql\Model\Model.cpp.s
-
 FakeSql\Model\bTree.obj: FakeSql\Model\bTree.cpp.obj
 
 .PHONY : FakeSql\Model\bTree.obj
@@ -234,6 +180,33 @@ FakeSql\Model\bTree.s: FakeSql\Model\bTree.cpp.s
 FakeSql\Model\bTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.s
 .PHONY : FakeSql\Model\bTree.cpp.s
+
+FakeSql\Parser\Parser.obj: FakeSql\Parser\Parser.cpp.obj
+
+.PHONY : FakeSql\Parser\Parser.obj
+
+# target to build an object file
+FakeSql\Parser\Parser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj
+.PHONY : FakeSql\Parser\Parser.cpp.obj
+
+FakeSql\Parser\Parser.i: FakeSql\Parser\Parser.cpp.i
+
+.PHONY : FakeSql\Parser\Parser.i
+
+# target to preprocess a source file
+FakeSql\Parser\Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.i
+.PHONY : FakeSql\Parser\Parser.cpp.i
+
+FakeSql\Parser\Parser.s: FakeSql\Parser\Parser.cpp.s
+
+.PHONY : FakeSql\Parser\Parser.s
+
+# target to generate assembly for a file
+FakeSql\Parser\Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.s
+.PHONY : FakeSql\Parser\Parser.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -274,15 +247,12 @@ help:
 	@echo ... FakeSql/Model/BTreeAct.obj
 	@echo ... FakeSql/Model/BTreeAct.i
 	@echo ... FakeSql/Model/BTreeAct.s
-	@echo ... FakeSql/Model/DataSlot.obj
-	@echo ... FakeSql/Model/DataSlot.i
-	@echo ... FakeSql/Model/DataSlot.s
-	@echo ... FakeSql/Model/Model.obj
-	@echo ... FakeSql/Model/Model.i
-	@echo ... FakeSql/Model/Model.s
 	@echo ... FakeSql/Model/bTree.obj
 	@echo ... FakeSql/Model/bTree.i
 	@echo ... FakeSql/Model/bTree.s
+	@echo ... FakeSql/Parser/Parser.obj
+	@echo ... FakeSql/Parser/Parser.i
+	@echo ... FakeSql/Parser/Parser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
