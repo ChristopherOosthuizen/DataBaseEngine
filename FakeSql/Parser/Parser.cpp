@@ -23,9 +23,18 @@ Token* Parser::next() {
         case '}':return new Token("}",TokenType::CLOSING_BRACE,m_id,m_line,m_pos);
         case '\n':m_line++;
             m_pos=0;
-            return new Token("\\n",TokenType::ENDLINE,m_id,m_line,m_pos);
+            m_id--;
+              return new Token("\\n",TokenType::NEW_LINE,m_id,m_line,m_pos);
         case ';':return new Token(";",TokenType::SEMICOLIN,m_id,m_line,m_pos);
-        case ':': return new Token(":",TokenType::COLIN,m_id,m_line,m_pos);
+        case ':':
+            switch(peek()){
+                case 'e': advance(); return new Token(":e",TokenType::EDIT,m_id,m_line,m_pos-1);
+                case 'd':advance(); return new Token(":d",TokenType::DELETE,m_id,m_line,m_pos-1);
+                case 'c':advance(); return new Token(":c",TokenType::CREATE,m_id,m_line,m_pos-1);
+                case 's':advance(); return new Token(":s",TokenType::SEARCH,m_id,m_line,m_pos-1);
+            }
+            return new Token(":",TokenType::COLIN,m_id,m_line,m_pos);
+        case '\b':
         case ' ': m_id--;
             return next();
         case '"': return findString();
@@ -48,16 +57,15 @@ Token* Parser::findNumber(char c) {
 }
 Token* Parser::findIden(char c) {
     string result;
-    result+=c;
-    c = advance();
-    while(c !=0 && ((c >='A'&&c <='Z')||(c >='a'&&c<='z') )){
-        result +=c;
-        c= advance();
+    result +=c;
+    int start =m_pos;
+    while(peek() !=0 && ((peek() >='A'&&peek() <='Z')||(peek() >='a'&&peek()<='z'))){
+        result +=advance();
     }
     if(s_keys[result] != (TokenType)NULL){
-        return new Token(result,s_keys[result],m_id,m_line,m_pos);
+        return new Token(result,s_keys[result],m_id,m_line,start);
     }
-    return new Token(result,TokenType::IDEN,m_id,m_line,m_pos);
+    return new Token(result,TokenType::IDEN,m_id,m_line,start);
 
 
 }
@@ -80,7 +88,8 @@ char Parser::advance() {
         return m_content->at(m_curr);
     }
     m_pos++;
-    return m_content->at(m_curr++);
+    char c =m_content->at(m_curr++);
+    return c;
 }
 
 char Parser::peek() {

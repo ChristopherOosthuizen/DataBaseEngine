@@ -84,10 +84,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.cpp">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.cpp">
 			<Option target="FakeSql"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/BTreeAct.h">
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.h">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h">
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp">
@@ -100,6 +106,18 @@
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h">
 			<Option target="FakeSql"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/main.cpp">

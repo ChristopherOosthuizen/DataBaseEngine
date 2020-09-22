@@ -1,7 +1,9 @@
 #include <iostream>
+#include <list>
 #include "FakeSql/Parser/Parser.h"
-
-
+#include "FakeSql/StatmentParser/StatementParser.h"
+#include "FakeSql/Model/Model.h"
+#include "FakeSql/Model/bTree.h"
 void readLine(string* str){
     char c=0;
     int isMultiLine =0;
@@ -16,17 +18,39 @@ void readLine(string* str){
 }
 
 int main() {
-    string* input = new string;
-    do{
+    /*string* input = new string;
+    while(1){
         std::cout << ">";
         readLine(input);
+        if(!input->compare(":q\n"))
+            break;
         Parser parser(input);
+        auto* tokens = new std::list<Token*>;
         while(!parser.isDone()){
             Token* token = parser.next();
-            token->toString();
-            delete token;
+            tokens->push_back(token);
         }
-    }while(input->compare(":q"));
-    delete input;
+        try {
+            StatementParser stat(tokens);
+            stat.next()->print();
+        }catch(string& e ){
+            std::cout<<e<<"\n";
+        }
+        *input ="";
+    }
+    delete input;*/
+
+    BTree t(20);
+    for(int i=0; i< 200;i++)
+        t.insert(i);
+    for(int i=0; i< 200;i++){
+        if(t.search(i)!=NULL)
+            std::cout <<i <<" yes\n";
+        else{
+            std::cout <<i <<" no\n";
+        }
+    }
+    t.print();
+
 }
 

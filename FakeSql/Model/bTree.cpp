@@ -4,84 +4,123 @@
 
 #include "bTree.h"
 #include <stdlib.h>
-template <class T>
-bTreeNode<T>::bTreeNode(int p_maxKeys, bool _leaf, void* object){
-    m_object = (object);
-    m_maxKeys = p_maxKeys;
-    leaf = _leaf;
-    m_keys = new T[2*m_maxKeys-1];
-    m_children = new bTreeNode *[2*m_maxKeys];
-    m_currKeyCount =0;
-}
-template <class T>
-void bTreeNode<T>::traverse() {
-    int i;
-    for(i =0; i<m_currKeyCount;i++){
-        if(!leaf)
-            m_children[i]->traverse();
-        std::cout << " "<< m_keys[i];
-    }
-    if(!leaf)
-        m_children[i]->traverse();
-}
-template <class T>
-bTreeNode<T> *bTreeNode<T>::search(T key) {
-    int i=0;
-    while(i <m_currKeyCount && m_keys[i] < key)
-        i++;
-    if(m_keys[i] ==key)
-        return this;
-    if(leaf)
-        return NULL;
-    return m_children[i]->search(key);
+
+using namespace std;
+
+TreeNode::TreeNode(int keyCount, bool isLeaf) {
+    m_maxKeyCount = keyCount;
+    m_isLeaf = isLeaf;
+    //allocate maximum memory possible childern
+    m_keys = new int[2*m_maxKeyCount-1];
+    m_childPointers = new TreeNode *[2*m_maxKeyCount];
+
+    //set the initial size to 0
+    m_currKeysCount =0;
 }
 
-template <class T>
-void bTreeNode<T>::insertNonFull(T key) {
-    int i = m_currKeyCount-1;
-    if(leaf){
-        while(i>=0 && m_keys[i] > key){
+void TreeNode::printTree(){
+    //for all the keys inside
+    int i;
+    for(i=0; i< m_currKeysCount;i++){
+        //if its not a leaf traverse through those nodes as well
+        if(!m_isLeaf)
+            m_childPointers[i]->printTree();
+        //print the current key
+        cout << " " << m_keys[i];
+    }
+    //print last nodes
+    if(!m_isLeaf)
+        m_childPointers[i]->printTree();
+}
+
+TreeNode* TreeNode::search(int key) {
+    // find the first key that's bigger than key
+    int i;
+    for(i=0; i<m_currKeysCount&& key > m_keys[i];i++);
+
+    //if the key equals this key return node
+    if(m_keys[i] == key)
+        return this;
+    //if key is not found and the node is a leaf return NULL
+    if(m_isLeaf)
+        return NULL;
+    return m_childPointers[i]->search(key);
+}
+
+void BTree::insert(int key){
+    //if the tree is empty
+    if(m_root == NULL){
+        //create a node to act as root
+        m_root = new TreeNode(m_maxValCount,true);
+        //set the current key
+        m_root->m_keys[0] = key;
+        //set size to 1
+        m_root->m_currKeysCount =1;
+    }else{
+        //if the root is full
+        if(m_root->m_currKeysCount == 2*m_maxValCount-1){
+            auto *newRoot = new TreeNode(m_maxValCount,false);
+            newRoot->m_childPointers[0] = m_root;
+            newRoot->splitChild(0,m_root);
+            int i =0;
+            if(newRoot->m_keys[0]<key)
+                i++;
+            newRoot->m_childPointers[i]->insertNonFull(key);
+            m_root = newRoot;
+        }else
+            m_root->insertNonFull(key);
+    }
+}
+
+void TreeNode::insertNonFull(int key) {
+    int i = m_currKeysCount-1;
+    if(m_isLeaf){
+        //move all the loops
+        while( i>=0 && m_keys[i] >key){
             m_keys[i+1] = m_keys[i];
             i--;
         }
-        m_keys[i+1] =key;
-        m_currKeyCount +=1;
+        m_keys[i+1] = key;
+        m_currKeysCount++;
     }else{
-        while(i >= 0 && m_keys[i] > key)
+        while (i >= 0 && m_keys[i] > key)
             i--;
-        if(m_children[i+1]->m_currKeyCount == 2*m_maxKeys-1){
-            splitChild(i+1, m_children[i+1]);
-            if(m_keys[i+1] < key)
-                i++;
+        if(m_childPointers[i+1]->m_currKeysCount == 2*m_maxKeyCount-1){
+            splitChild(i+1,m_childPointers[i+1]);
+            if(m_keys[i+1] <key)i++;
         }
-        m_children[i+1]->insertNonFull(key);
+        m_childPointers[i+1]->insertNonFull(key);
     }
 }
 
-template <class T>
-void bTreeNode<T>::splitChild(int i, bTreeNode *y) {
-    auto *z = new bTreeNode(y->m_maxKeys, y->leaf,y->m_object);
-    z->m_currKeyCount = m_maxKeys-1;
-    for(int j=0; j< m_maxKeys-1;j++){
-        z->m_keys[j] = y->m_keys[j+m_maxKeys];
+void TreeNode::splitChild(int val, TreeNode *node) {
+    //create a new node that stores the last key
+    TreeNode* prevNode = new TreeNode(node->m_maxKeyCount,node->m_isLeaf);
+    prevNode->m_currKeysCount = m_maxKeyCount-1;
+
+    //copy keys from node to prevNode
+    for(int i=0; i< m_maxKeyCount-1;i++)
+        prevNode->m_keys[i] = node->m_keys[i+m_maxKeyCount];
+    //copy keys from node to prev node
+    if(!node->m_isLeaf){
+        for(int j=0;j<m_maxKeyCount;j++)
+            prevNode->m_childPointers[j] = node->m_childPointers[j+m_maxKeyCount];
     }
 
-    if(!y->leaf){
-        for(int j =0; j<m_maxKeys;j++){
-            z->m_children[j] = y->m_children[j+m_maxKeys];
-        }
-    }
-    y->m_currKeyCount = m_maxKeys-1;
+    //create a space for a ne child
+    node->m_currKeysCount= m_maxKeyCount-1;
+    for(int i = m_currKeysCount; i>= val+1;i--)
+        m_childPointers[i+1] = m_childPointers[i];
 
-    for(int j =m_currKeyCount;j >= i+1;j--){
-        m_children[j+1] = m_children[j];
-    }
+    //link the nodes
+    m_childPointers[val+1]=prevNode;
 
-    m_children[i+1] = z;
 
-    for(int j = m_currKeyCount-1; j >=i;j--)
-        m_keys[j+1] = y->m_keys[j];
+    //move key nodes
+    for(int i= m_currKeysCount-1; i>= val;i--)
+        m_keys[i+1] = m_keys[i];
 
-    m_keys[i] = y->m_keys[m_maxKeys-1];
-    m_currKeyCount++;
+
+    m_keys[val] = node->m_keys[m_maxKeyCount-1];
+    m_currKeysCount++;
 }

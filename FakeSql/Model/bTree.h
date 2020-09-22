@@ -5,22 +5,46 @@
 #ifndef FAKESQL_BTREE_H
 #define FAKESQL_BTREE_H
 #include<iostream>
-class DataObject;
-template <class T>
-class bTreeNode{
+#include "Model.h"
+#include <list>
+using namespace std;
+class TreeNode {
+    int *m_keys;
+    int m_maxKeyCount;
+    TreeNode **m_childPointers;
+    int m_currKeysCount;
+    bool m_isLeaf;
 public:
- T *m_keys;
- int m_maxKeys;
- bTreeNode **m_children;
- int m_currKeyCount;
- bool leaf;
- void* m_object;
+    TreeNode(int keyCount, bool isLeaf);
+    void insertNonFull(int key);
+    void splitChild(int val, TreeNode *node);
+    void printTree();
+    TreeNode *search(int key);
+    friend class BTree;
+    Object* m_object;
+    friend class BTree;
+};
+class BTree {
+    TreeNode *m_root;
+    int m_maxValCount;
+
+
 public:
-    bTreeNode(int _t,bool _leaf,void* object);
-    void traverse();
-    bTreeNode *search(T k);
-    void splitChild(int i, bTreeNode *y);
-    void insertNonFull(T key);
+    BTree(int maxValCount) {
+        m_root = NULL;
+        m_maxValCount = maxValCount;
+    }
+
+    void print() {
+        if (m_root != NULL)
+            m_root->printTree();
+    }
+
+    TreeNode *search(int k) {
+        return (m_root == NULL) ? NULL : m_root->search(k);
+    }
+
+    void insert(int key);
 };
 
 
