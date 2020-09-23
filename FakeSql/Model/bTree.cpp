@@ -11,13 +11,17 @@ TreeNode::TreeNode(int keyCount, bool isLeaf) {
     m_maxKeyCount = keyCount;
     m_isLeaf = isLeaf;
     //allocate maximum memory possible childern
-    m_keys = new int[2*m_maxKeyCount-1];
+    m_keys = new TreeVal*[2*m_maxKeyCount-1];
     m_childPointers = new TreeNode *[2*m_maxKeyCount];
 
     //set the initial size to 0
     m_currKeysCount =0;
 }
-
+TreeNode::~TreeNode() {
+    for(int i=0; i< m_currKeysCount+1;i++)
+        free(m_keys[i]);
+    free(m_keys);
+}
 void TreeNode::printTree(){
     //for all the keys inside
     int i;
@@ -26,34 +30,34 @@ void TreeNode::printTree(){
         if(!m_isLeaf)
             m_childPointers[i]->printTree();
         //print the current key
-        cout << " " << m_keys[i];
+        cout << " " << m_keys[i]->m_value;
     }
     //print last nodes
     if(!m_isLeaf)
         m_childPointers[i]->printTree();
 }
 
-TreeNode* TreeNode::search(int key) {
+TreeVal* TreeNode::search(int key) {
     // find the first key that's bigger than key
     int i;
-    for(i=0; i<m_currKeysCount&& key > m_keys[i];i++);
+    for(i=0; i<m_currKeysCount&& key > m_keys[i]->m_value;i++);
 
     //if the key equals this key return node
-    if(m_keys[i] == key)
-        return this;
+    if(m_keys[i]->m_value == key)
+        return m_keys[i];
     //if key is not found and the node is a leaf return NULL
     if(m_isLeaf)
         return NULL;
     return m_childPointers[i]->search(key);
 }
 
-void BTree::insert(int key){
+void BTree::insert(int key,Object* object){
     //if the tree is empty
     if(m_root == NULL){
         //create a node to act as root
         m_root = new TreeNode(m_maxValCount,true);
         //set the current key
-        m_root->m_keys[0] = key;
+        m_root->m_keys[0] = new TreeVal(key,object);
         //set size to 1
         m_root->m_currKeysCount =1;
     }else{
@@ -63,33 +67,33 @@ void BTree::insert(int key){
             newRoot->m_childPointers[0] = m_root;
             newRoot->splitChild(0,m_root);
             int i =0;
-            if(newRoot->m_keys[0]<key)
+            if(newRoot->m_keys[0]->m_value<key)
                 i++;
-            newRoot->m_childPointers[i]->insertNonFull(key);
+            newRoot->m_childPointers[i]->insertNonFull(key,object);
             m_root = newRoot;
         }else
-            m_root->insertNonFull(key);
+            m_root->insertNonFull(key,object);
     }
 }
 
-void TreeNode::insertNonFull(int key) {
+void TreeNode::insertNonFull(int key,Object* object) {
     int i = m_currKeysCount-1;
     if(m_isLeaf){
         //move all the loops
-        while( i>=0 && m_keys[i] >key){
+        while( i>=0 && m_keys[i]->m_value >key){
             m_keys[i+1] = m_keys[i];
             i--;
         }
-        m_keys[i+1] = key;
+        m_keys[i+1] = new TreeVal(key,object);
         m_currKeysCount++;
     }else{
-        while (i >= 0 && m_keys[i] > key)
+        while (i >= 0 && m_keys[i]->m_value > key)
             i--;
         if(m_childPointers[i+1]->m_currKeysCount == 2*m_maxKeyCount-1){
             splitChild(i+1,m_childPointers[i+1]);
-            if(m_keys[i+1] <key)i++;
+            if(m_keys[i+1]->m_value <key)i++;
         }
-        m_childPointers[i+1]->insertNonFull(key);
+        m_childPointers[i+1]->insertNonFull(key,object);
     }
 }
 

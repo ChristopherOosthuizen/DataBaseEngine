@@ -8,18 +8,32 @@
 #include "Model.h"
 #include <list>
 using namespace std;
+class TreeVal{
+
+public:
+    int m_value;
+
+    TreeVal(int value, Object* object){
+        m_value = value;
+        m_object = object;
+    }
+
+    Object* m_object;
+};
+
 class TreeNode {
-    int *m_keys;
+    TreeVal **m_keys;
     int m_maxKeyCount;
     TreeNode **m_childPointers;
     int m_currKeysCount;
     bool m_isLeaf;
 public:
     TreeNode(int keyCount, bool isLeaf);
-    void insertNonFull(int key);
+    ~TreeNode();
+    void insertNonFull(int key,Object* object);
     void splitChild(int val, TreeNode *node);
     void printTree();
-    TreeNode *search(int key);
+    TreeVal *search(int key);
     friend class BTree;
     Object* m_object;
     friend class BTree;
@@ -40,12 +54,13 @@ public:
             m_root->printTree();
     }
 
-    TreeNode *search(int k) {
+    TreeVal *search(int k) {
         return (m_root == NULL) ? NULL : m_root->search(k);
     }
 
-    void insert(int key);
+    void insert(int key,Object* object);
 };
+
 
 
 

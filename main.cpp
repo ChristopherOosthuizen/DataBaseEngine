@@ -40,17 +40,18 @@ int main() {
     }
     delete input;*/
 
-    BTree t(20);
-    for(int i=0; i< 200;i++)
-        t.insert(i);
-    for(int i=0; i< 200;i++){
-        if(t.search(i)!=NULL)
-            std::cout <<i <<" yes\n";
-        else{
-            std::cout <<i <<" no\n";
-        }
-    }
-    t.print();
+    BTree t(3);
+    Object* obj1 = new Object(12,"Hello");
+    Object* obj2 = new Object(14,"No right");
+    Object* obj3 = new Object(45,"good");
+    Object* obj4 = new Object(56,"great");
+    t.insert(obj1->m_id,obj1);
+    t.insert(obj2->m_id,obj2);
+    t.insert(obj3->m_id,obj3);
+    t.insert(obj4->m_id,obj4);
+    Object* obj = t.search(56)->m_object;
+    cout<<obj->m_name;
+
 
 }
 
