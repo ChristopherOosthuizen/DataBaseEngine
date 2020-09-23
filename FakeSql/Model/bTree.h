@@ -34,6 +34,7 @@ public:
     void splitChild(int val, TreeNode *node);
     void printTree();
     TreeVal *search(int key);
+    void findAll(int key,list<Object*>* objects);
     friend class BTree;
     Object* m_object;
     friend class BTree;
@@ -47,6 +48,12 @@ public:
     BTree(int maxValCount) {
         m_root = NULL;
         m_maxValCount = maxValCount;
+    }
+    list<Object*>* findAll(int key){
+        auto* col = new list<Object*>;
+        if(m_root !=NULL)
+            m_root->findAll(key,col);
+        return col;
     }
 
     void print() {

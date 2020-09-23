@@ -128,3 +128,23 @@ void TreeNode::splitChild(int val, TreeNode *node) {
     m_keys[val] = node->m_keys[m_maxKeyCount-1];
     m_currKeysCount++;
 }
+
+void TreeNode::findAll(int key,list<Object*>* col) {
+    // find the first key that's bigger than key
+    int i;
+    for(i=0; i<m_currKeysCount&& key > m_keys[i]->m_value;i++);
+
+
+    //if the key equals this key return node
+    while(i<m_currKeysCount&& m_keys[i]->m_value == key) {
+
+        col->push_back(m_keys[i]->m_object);
+        if(!m_isLeaf)
+            m_childPointers[i]->findAll(key,col);
+        i++;
+    }
+    //if key is not found and the node is a leaf return NULL
+    if(m_isLeaf)
+        return ;
+    m_childPointers[i]->findAll(key,col);
+}
