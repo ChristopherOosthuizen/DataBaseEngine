@@ -7,12 +7,15 @@
 Token* StatementParser::advance() {
 
     if(isFinished()){
+
         return NULL;
     }
     return *(m_it++);
 }
 
 Token *StatementParser::peek() {
+    if(isFinished())
+        return NULL;
     auto dupe = m_it;
     return *(++dupe);
 }
@@ -53,14 +56,15 @@ Block* StatementParser::createBlock() {
     Token* token = advance();
     auto* definitions = new list<Definition*>;
     if(token->m_type == TokenType::OPENING_BRACE){
-        while(peek()->m_type != TokenType::CLOSING_BRACE){
+        while(!isFinished() &&(peek()->m_type) != TokenType::CLOSING_BRACE){
             definitions->push_back(createDefinition());
         }
+        advance();
     }
     return new Block(definitions);
 }
 int StatementParser::isFinished() {
-    return (m_it) == m_tokens->end();
+    return (m_it) == --m_tokens->end();
 }
 
 Definition *StatementParser::createDefinition() {
@@ -89,6 +93,8 @@ void StatementParser::throwError(const string &message,Token* token) {
 }
 
 void StatementParser::match(Token *token, TokenType type,const string& message) {
+    if(token ==NULL)
+        throw string("UNCLOSED statement");
     if(token->m_type != type){
         throwError(message,token);
     }
@@ -96,7 +102,7 @@ void StatementParser::match(Token *token, TokenType type,const string& message) 
 
 Token *StatementParser::advance(TokenType ignore) {
     Token* token =advance();
-    while(token->m_type == ignore)
+    while(token != NULL &&token->m_type == ignore)
         token = advance();
     return token;
 }
@@ -113,4 +119,17 @@ Type::Type(Token *token) {
 
 void Statement::run() {
 
+}
+
+Value::Value(Token *token) {
+    switch(token->m_type){
+        case TokenType::STRINGIDEN:
+        case TokenType::NUM:
+        case TokenType::DOUBLE:
+        case TokenType::STRING:
+        case TokenType::BOOL:
+        case TokenType::BOOLIDEN:break;
+        default: StatementParser::throwError("INVALID type",token);
+    }
+    m_token = token;
 }

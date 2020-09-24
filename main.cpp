@@ -18,7 +18,8 @@ void readLine(string* str){
 }
 
 int main() {
-    /*string* input = new string;
+    string* input = new string;
+    map<string,Model*> models;
     while(1){
         std::cout << ">";
         readLine(input);
@@ -29,18 +30,24 @@ int main() {
         while(!parser.isDone()){
             Token* token = parser.next();
             tokens->push_back(token);
+            token->toString();
         }
         try {
             StatementParser stat(tokens);
-            stat.next()->print();
+            Expression* expression = stat.next();
+            if(expression->m_type->m_token->m_type == TokenType::MODEL){
+                models[expression->m_query->m_token->m_symbol] = new Model(expression);
+            }else{
+                models[expression->m_query->m_token->m_symbol]->insert(expression->m_query);
+            }
         }catch(string& e ){
-            std::cout<<e<<"\n";
+            std::cout<<"\n"<<e<<"\n";
         }
         *input ="";
     }
-    delete input;*/
+    delete input;
 
-    BTree t(3);
+
 
 
 

@@ -41,16 +41,18 @@ Token* Parser::next() {
     }
     if( (c >='1'&&c <='9'))
         return findNumber(c);
-    return findIden(c);
+    if(((c >='A'&&c <='Z')||(c >='a'&&c<='z')))
+        return findIden(c);
+    throw "UNKOWN carcter used";
+    return NULL;
 
 
 
 }
 Token* Parser::findNumber(char c) {
     string result;
-    while(c !=0 && ((c >='1'&&c <='9'))){
-        result +=c;
-        c= advance();
+    while(peek() !=0 && ((peek() >='0'&&peek() <='9'))){
+        result +=advance();
     }
     return new Token(result,TokenType::DOUBLE,m_id,m_line,m_pos);
 
@@ -72,7 +74,7 @@ Token* Parser::findIden(char c) {
 Token* Parser::findString(){
     char c = advance();
     string result;
-    while(c !=0 && c !='\n'){
+    while(c !=0 && c !='"'){
         result +=c;
         c= advance();
     }
@@ -93,7 +95,8 @@ char Parser::advance() {
 }
 
 char Parser::peek() {
-
+    if(isDone())
+        return 0;
     return m_content->at(m_curr);
 }
 

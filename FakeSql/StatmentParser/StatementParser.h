@@ -18,9 +18,8 @@ class Value: Statement{
 public:
     Token* m_token;
 
-    Value(Token* token){
-        m_token = token;
-    }
+    Value(Token* token);
+
 };
 class Command: Statement{
 public:
@@ -85,7 +84,6 @@ public:
 
 class StatementParser {
     list<Token*>* m_tokens;
-
     list<Token*>::iterator m_it;
     Token* advance();
     Token* advance(TokenType ignore);

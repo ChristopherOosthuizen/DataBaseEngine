@@ -13,9 +13,11 @@ using namespace std;
 class Model {
     map<string,BTree*> m_values;
     string m_name;
-    Model(Expression* expression);
-    void insert(Query* query);
 
+public:
+    Model(Expression* expression);
+
+    void insert(Query* query);
 };
 
 

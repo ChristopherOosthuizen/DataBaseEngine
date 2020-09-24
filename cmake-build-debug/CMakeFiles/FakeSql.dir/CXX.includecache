@@ -50,6 +50,10 @@ string
 map
 -
 
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp
+StatementParser.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
+
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 ../Parser/Parser.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
@@ -57,6 +61,14 @@ list
 -
 iostream
 -
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.cpp
+Runner.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
+../StatmentParser/StatementParser.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 
 C:/Users/Chris/CLionProjects/FakeSql/main.cpp
 iostream

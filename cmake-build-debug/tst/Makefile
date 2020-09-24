@@ -177,6 +177,270 @@ FakeSql_tst\fast:
 	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
 .PHONY : FakeSql_tst\fast
 
+StatmentParserTest.obj: StatmentParserTest.cpp.obj
+
+.PHONY : StatmentParserTest.obj
+
+# target to build an object file
+StatmentParserTest.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\StatmentParserTest.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : StatmentParserTest.cpp.obj
+
+StatmentParserTest.i: StatmentParserTest.cpp.i
+
+.PHONY : StatmentParserTest.i
+
+# target to preprocess a source file
+StatmentParserTest.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\StatmentParserTest.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : StatmentParserTest.cpp.i
+
+StatmentParserTest.s: StatmentParserTest.cpp.s
+
+.PHONY : StatmentParserTest.s
+
+# target to generate assembly for a file
+StatmentParserTest.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\StatmentParserTest.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : StatmentParserTest.cpp.s
+
+TokenizerTest.obj: TokenizerTest.cpp.obj
+
+.PHONY : TokenizerTest.obj
+
+# target to build an object file
+TokenizerTest.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\TokenizerTest.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : TokenizerTest.cpp.obj
+
+TokenizerTest.i: TokenizerTest.cpp.i
+
+.PHONY : TokenizerTest.i
+
+# target to preprocess a source file
+TokenizerTest.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\TokenizerTest.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : TokenizerTest.cpp.i
+
+TokenizerTest.s: TokenizerTest.cpp.s
+
+.PHONY : TokenizerTest.s
+
+# target to generate assembly for a file
+TokenizerTest.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\TokenizerTest.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : TokenizerTest.cpp.s
+
+__\FakeSql\Errors\Errors.obj: __\FakeSql\Errors\Errors.cpp.obj
+
+.PHONY : __\FakeSql\Errors\Errors.obj
+
+# target to build an object file
+__\FakeSql\Errors\Errors.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Errors\Errors.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Errors\Errors.cpp.obj
+
+__\FakeSql\Errors\Errors.i: __\FakeSql\Errors\Errors.cpp.i
+
+.PHONY : __\FakeSql\Errors\Errors.i
+
+# target to preprocess a source file
+__\FakeSql\Errors\Errors.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Errors\Errors.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Errors\Errors.cpp.i
+
+__\FakeSql\Errors\Errors.s: __\FakeSql\Errors\Errors.cpp.s
+
+.PHONY : __\FakeSql\Errors\Errors.s
+
+# target to generate assembly for a file
+__\FakeSql\Errors\Errors.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Errors\Errors.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Errors\Errors.cpp.s
+
+__\FakeSql\Model\DataObject.obj: __\FakeSql\Model\DataObject.cpp.obj
+
+.PHONY : __\FakeSql\Model\DataObject.obj
+
+# target to build an object file
+__\FakeSql\Model\DataObject.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\DataObject.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\DataObject.cpp.obj
+
+__\FakeSql\Model\DataObject.i: __\FakeSql\Model\DataObject.cpp.i
+
+.PHONY : __\FakeSql\Model\DataObject.i
+
+# target to preprocess a source file
+__\FakeSql\Model\DataObject.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\DataObject.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\DataObject.cpp.i
+
+__\FakeSql\Model\DataObject.s: __\FakeSql\Model\DataObject.cpp.s
+
+.PHONY : __\FakeSql\Model\DataObject.s
+
+# target to generate assembly for a file
+__\FakeSql\Model\DataObject.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\DataObject.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\DataObject.cpp.s
+
+__\FakeSql\Model\Model.obj: __\FakeSql\Model\Model.cpp.obj
+
+.PHONY : __\FakeSql\Model\Model.obj
+
+# target to build an object file
+__\FakeSql\Model\Model.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\Model.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\Model.cpp.obj
+
+__\FakeSql\Model\Model.i: __\FakeSql\Model\Model.cpp.i
+
+.PHONY : __\FakeSql\Model\Model.i
+
+# target to preprocess a source file
+__\FakeSql\Model\Model.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\Model.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\Model.cpp.i
+
+__\FakeSql\Model\Model.s: __\FakeSql\Model\Model.cpp.s
+
+.PHONY : __\FakeSql\Model\Model.s
+
+# target to generate assembly for a file
+__\FakeSql\Model\Model.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\Model.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\Model.cpp.s
+
+__\FakeSql\Model\bTree.obj: __\FakeSql\Model\bTree.cpp.obj
+
+.PHONY : __\FakeSql\Model\bTree.obj
+
+# target to build an object file
+__\FakeSql\Model\bTree.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\bTree.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\bTree.cpp.obj
+
+__\FakeSql\Model\bTree.i: __\FakeSql\Model\bTree.cpp.i
+
+.PHONY : __\FakeSql\Model\bTree.i
+
+# target to preprocess a source file
+__\FakeSql\Model\bTree.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\bTree.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\bTree.cpp.i
+
+__\FakeSql\Model\bTree.s: __\FakeSql\Model\bTree.cpp.s
+
+.PHONY : __\FakeSql\Model\bTree.s
+
+# target to generate assembly for a file
+__\FakeSql\Model\bTree.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Model\bTree.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Model\bTree.cpp.s
+
+__\FakeSql\Parser\Parser.obj: __\FakeSql\Parser\Parser.cpp.obj
+
+.PHONY : __\FakeSql\Parser\Parser.obj
+
+# target to build an object file
+__\FakeSql\Parser\Parser.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Parser\Parser.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Parser\Parser.cpp.obj
+
+__\FakeSql\Parser\Parser.i: __\FakeSql\Parser\Parser.cpp.i
+
+.PHONY : __\FakeSql\Parser\Parser.i
+
+# target to preprocess a source file
+__\FakeSql\Parser\Parser.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Parser\Parser.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Parser\Parser.cpp.i
+
+__\FakeSql\Parser\Parser.s: __\FakeSql\Parser\Parser.cpp.s
+
+.PHONY : __\FakeSql\Parser\Parser.s
+
+# target to generate assembly for a file
+__\FakeSql\Parser\Parser.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\Parser\Parser.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\Parser\Parser.cpp.s
+
+__\FakeSql\StatmentParser\StatementParser.obj: __\FakeSql\StatmentParser\StatementParser.cpp.obj
+
+.PHONY : __\FakeSql\StatmentParser\StatementParser.obj
+
+# target to build an object file
+__\FakeSql\StatmentParser\StatementParser.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\StatmentParser\StatementParser.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\StatmentParser\StatementParser.cpp.obj
+
+__\FakeSql\StatmentParser\StatementParser.i: __\FakeSql\StatmentParser\StatementParser.cpp.i
+
+.PHONY : __\FakeSql\StatmentParser\StatementParser.i
+
+# target to preprocess a source file
+__\FakeSql\StatmentParser\StatementParser.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\StatmentParser\StatementParser.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\StatmentParser\StatementParser.cpp.i
+
+__\FakeSql\StatmentParser\StatementParser.s: __\FakeSql\StatmentParser\StatementParser.cpp.s
+
+.PHONY : __\FakeSql\StatmentParser\StatementParser.s
+
+# target to generate assembly for a file
+__\FakeSql\StatmentParser\StatementParser.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\__\FakeSql\StatmentParser\StatementParser.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : __\FakeSql\StatmentParser\StatementParser.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -222,6 +486,30 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... FakeSql_tst
+	@echo ... StatmentParserTest.obj
+	@echo ... StatmentParserTest.i
+	@echo ... StatmentParserTest.s
+	@echo ... TokenizerTest.obj
+	@echo ... TokenizerTest.i
+	@echo ... TokenizerTest.s
+	@echo ... __/FakeSql/Errors/Errors.obj
+	@echo ... __/FakeSql/Errors/Errors.i
+	@echo ... __/FakeSql/Errors/Errors.s
+	@echo ... __/FakeSql/Model/DataObject.obj
+	@echo ... __/FakeSql/Model/DataObject.i
+	@echo ... __/FakeSql/Model/DataObject.s
+	@echo ... __/FakeSql/Model/Model.obj
+	@echo ... __/FakeSql/Model/Model.i
+	@echo ... __/FakeSql/Model/Model.s
+	@echo ... __/FakeSql/Model/bTree.obj
+	@echo ... __/FakeSql/Model/bTree.i
+	@echo ... __/FakeSql/Model/bTree.s
+	@echo ... __/FakeSql/Parser/Parser.obj
+	@echo ... __/FakeSql/Parser/Parser.i
+	@echo ... __/FakeSql/Parser/Parser.s
+	@echo ... __/FakeSql/StatmentParser/StatementParser.obj
+	@echo ... __/FakeSql/StatmentParser/StatementParser.i
+	@echo ... __/FakeSql/StatmentParser/StatementParser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

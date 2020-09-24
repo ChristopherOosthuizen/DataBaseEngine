@@ -5,7 +5,7 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\tst\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\FakeSql\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\tst\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/lib/googletest"/>
@@ -24,6 +24,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
@@ -51,6 +52,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
@@ -78,6 +80,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
@@ -105,6 +108,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googlemock"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
@@ -132,6 +136,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
@@ -157,6 +162,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
@@ -182,6 +188,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
@@ -207,6 +214,7 @@
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
+					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/FakeSql"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/include"/>
 					<Add directory="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
@@ -244,8 +252,8 @@
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/tst/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\tst\"/>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\FakeSql\"/>
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest\"/>
@@ -273,6 +281,9 @@
 		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/lib/googletest/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/tst/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tst\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

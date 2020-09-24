@@ -60,6 +60,30 @@ CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install\fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -81,6 +105,16 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+
+.PHONY : list_install_components\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -126,6 +160,97 @@ FakeSql: cmake_check_build_system
 FakeSql\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\build
 .PHONY : FakeSql\fast
+
+#=============================================================================
+# Target rules for targets named FakeSql_run
+
+# Build rule for target.
+FakeSql_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql_run
+.PHONY : FakeSql_run
+
+# fast build rule for target.
+FakeSql_run\fast:
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\build
+.PHONY : FakeSql_run\fast
+
+#=============================================================================
+# Target rules for targets named FakeSql_lib
+
+# Build rule for target.
+FakeSql_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql_lib
+.PHONY : FakeSql_lib
+
+# fast build rule for target.
+FakeSql_lib\fast:
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\build
+.PHONY : FakeSql_lib\fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main\fast:
+	$(MAKE) $(MAKESILENT) -f lib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make /nologo -$(MAKEFLAGS) lib\googletest\googlemock\CMakeFiles\gmock_main.dir\build
+.PHONY : gmock_main\fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock\fast:
+	$(MAKE) $(MAKESILENT) -f lib\googletest\googlemock\CMakeFiles\gmock.dir\build.make /nologo -$(MAKEFLAGS) lib\googletest\googlemock\CMakeFiles\gmock.dir\build
+.PHONY : gmock\fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest\fast:
+	$(MAKE) $(MAKESILENT) -f lib\googletest\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) lib\googletest\googletest\CMakeFiles\gtest.dir\build
+.PHONY : gtest\fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main\fast:
+	$(MAKE) $(MAKESILENT) -f lib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) lib\googletest\googletest\CMakeFiles\gtest_main.dir\build
+.PHONY : gtest_main\fast
+
+#=============================================================================
+# Target rules for targets named FakeSql_tst
+
+# Build rule for target.
+FakeSql_tst: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql_tst
+.PHONY : FakeSql_tst
+
+# fast build rule for target.
+FakeSql_tst\fast:
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\build
+.PHONY : FakeSql_tst\fast
 
 FakeSql\Errors\Errors.obj: FakeSql\Errors\Errors.cpp.obj
 
@@ -289,33 +414,6 @@ FakeSql\StatmentParser\StatementParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.s
 .PHONY : FakeSql\StatmentParser\StatementParser.cpp.s
 
-FakeSql\StatmentRunner\Runner.obj: FakeSql\StatmentRunner\Runner.cpp.obj
-
-.PHONY : FakeSql\StatmentRunner\Runner.obj
-
-# target to build an object file
-FakeSql\StatmentRunner\Runner.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Runner.cpp.obj
-.PHONY : FakeSql\StatmentRunner\Runner.cpp.obj
-
-FakeSql\StatmentRunner\Runner.i: FakeSql\StatmentRunner\Runner.cpp.i
-
-.PHONY : FakeSql\StatmentRunner\Runner.i
-
-# target to preprocess a source file
-FakeSql\StatmentRunner\Runner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Runner.cpp.i
-.PHONY : FakeSql\StatmentRunner\Runner.cpp.i
-
-FakeSql\StatmentRunner\Runner.s: FakeSql\StatmentRunner\Runner.cpp.s
-
-.PHONY : FakeSql\StatmentRunner\Runner.s
-
-# target to generate assembly for a file
-FakeSql\StatmentRunner\Runner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Runner.cpp.s
-.PHONY : FakeSql\StatmentRunner\Runner.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -350,8 +448,18 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... FakeSql
+	@echo ... FakeSql_lib
+	@echo ... FakeSql_run
+	@echo ... FakeSql_tst
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... FakeSql/Errors/Errors.obj
 	@echo ... FakeSql/Errors/Errors.i
 	@echo ... FakeSql/Errors/Errors.s
@@ -370,9 +478,6 @@ help:
 	@echo ... FakeSql/StatmentParser/StatementParser.obj
 	@echo ... FakeSql/StatmentParser/StatementParser.i
 	@echo ... FakeSql/StatmentParser/StatementParser.s
-	@echo ... FakeSql/StatmentRunner/Runner.obj
-	@echo ... FakeSql/StatmentRunner/Runner.i
-	@echo ... FakeSql/StatmentRunner/Runner.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
