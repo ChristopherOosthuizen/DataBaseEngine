@@ -5,7 +5,7 @@
 #ifndef FAKESQL_BTREE_H
 #define FAKESQL_BTREE_H
 #include<iostream>
-#include "Model.h"
+#include "DataObject.h"
 #include <list>
 using namespace std;
 class TreeVal{
@@ -13,12 +13,12 @@ class TreeVal{
 public:
     int m_value;
 
-    TreeVal(int value, Object* object){
+    TreeVal(int value, DataObject* object){
         m_value = value;
         m_object = object;
     }
 
-    Object* m_object;
+    DataObject* m_object;
 };
 
 class TreeNode {
@@ -30,13 +30,13 @@ class TreeNode {
 public:
     TreeNode(int keyCount, bool isLeaf);
     ~TreeNode();
-    void insertNonFull(int key,Object* object);
+    void insertNonFull(int key,DataObject* object);
     void splitChild(int val, TreeNode *node);
     void printTree();
     TreeVal *search(int key);
-    void findAll(int key,list<Object*>* objects);
+    void findAll(int key,list<DataObject*>* objects);
     friend class BTree;
-    Object* m_object;
+    DataObject* m_object;
     friend class BTree;
 };
 class BTree {
@@ -49,8 +49,8 @@ public:
         m_root = NULL;
         m_maxValCount = maxValCount;
     }
-    list<Object*>* findAll(int key){
-        auto* col = new list<Object*>;
+    list<DataObject*>* findAll(int key){
+        auto* col = new list<DataObject*>;
         if(m_root !=NULL)
             m_root->findAll(key,col);
         return col;
@@ -65,7 +65,7 @@ public:
         return (m_root == NULL) ? NULL : m_root->search(k);
     }
 
-    void insert(int key,Object* object);
+    void insert(int key,DataObject* object);
 };
 
 

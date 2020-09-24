@@ -4,13 +4,24 @@
 CMakeFiles/FakeSql.dir/FakeSql/Errors/Errors.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.h
+CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.cpp
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
@@ -24,6 +35,7 @@ CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Runner.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
 CMakeFiles/FakeSql.dir/main.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h

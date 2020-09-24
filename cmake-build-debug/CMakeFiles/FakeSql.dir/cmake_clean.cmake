@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FakeSql.dir/FakeSql/Errors/Errors.cpp.obj"
+  "CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.obj"
   "CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj"
   "CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj"
   "CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj"

@@ -6,9 +6,29 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.cpp
+sstream
+-
+DataObject.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+string
+-
+../StatmentParser/StatementParser.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp
+Model.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
 string
 -
+DataObject.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
 bTree.h
@@ -19,8 +39,8 @@ stdlib.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 iostream
 -
-Model.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
+DataObject.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
 list
 -
 

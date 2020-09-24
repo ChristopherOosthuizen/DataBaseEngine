@@ -154,6 +154,33 @@ FakeSql\Errors\Errors.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.s
 .PHONY : FakeSql\Errors\Errors.cpp.s
 
+FakeSql\Model\DataObject.obj: FakeSql\Model\DataObject.cpp.obj
+
+.PHONY : FakeSql\Model\DataObject.obj
+
+# target to build an object file
+FakeSql\Model\DataObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj
+.PHONY : FakeSql\Model\DataObject.cpp.obj
+
+FakeSql\Model\DataObject.i: FakeSql\Model\DataObject.cpp.i
+
+.PHONY : FakeSql\Model\DataObject.i
+
+# target to preprocess a source file
+FakeSql\Model\DataObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.i
+.PHONY : FakeSql\Model\DataObject.cpp.i
+
+FakeSql\Model\DataObject.s: FakeSql\Model\DataObject.cpp.s
+
+.PHONY : FakeSql\Model\DataObject.s
+
+# target to generate assembly for a file
+FakeSql\Model\DataObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.s
+.PHONY : FakeSql\Model\DataObject.cpp.s
+
 FakeSql\Model\Model.obj: FakeSql\Model\Model.cpp.obj
 
 .PHONY : FakeSql\Model\Model.obj
@@ -328,6 +355,9 @@ help:
 	@echo ... FakeSql/Errors/Errors.obj
 	@echo ... FakeSql/Errors/Errors.i
 	@echo ... FakeSql/Errors/Errors.s
+	@echo ... FakeSql/Model/DataObject.obj
+	@echo ... FakeSql/Model/DataObject.i
+	@echo ... FakeSql/Model/DataObject.s
 	@echo ... FakeSql/Model/Model.obj
 	@echo ... FakeSql/Model/Model.i
 	@echo ... FakeSql/Model/Model.s

@@ -90,6 +90,12 @@
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.h">
 			<Option target="FakeSql"/>
 		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.cpp">
+			<Option target="FakeSql"/>
+		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h">
+			<Option target="FakeSql"/>
+		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp">
 			<Option target="FakeSql"/>
 		</Unit>

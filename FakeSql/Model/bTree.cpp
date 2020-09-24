@@ -51,7 +51,7 @@ TreeVal* TreeNode::search(int key) {
     return m_childPointers[i]->search(key);
 }
 
-void BTree::insert(int key,Object* object){
+void BTree::insert(int key,DataObject* object){
     //if the tree is empty
     if(m_root == NULL){
         //create a node to act as root
@@ -76,7 +76,7 @@ void BTree::insert(int key,Object* object){
     }
 }
 
-void TreeNode::insertNonFull(int key,Object* object) {
+void TreeNode::insertNonFull(int key,DataObject* object) {
     int i = m_currKeysCount-1;
     if(m_isLeaf){
         //move all the loops
@@ -129,7 +129,7 @@ void TreeNode::splitChild(int val, TreeNode *node) {
     m_currKeysCount++;
 }
 
-void TreeNode::findAll(int key,list<Object*>* col) {
+void TreeNode::findAll(int key,list<DataObject*>* col) {
     // find the first key that's bigger than key
     int i;
     for(i=0; i<m_currKeysCount&& key > m_keys[i]->m_value;i++);

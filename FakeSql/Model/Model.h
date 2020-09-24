@@ -6,22 +6,16 @@
 #define FAKESQL_MODEL_H
 
 #include <string>
+#include "DataObject.h"
+#include "bTree.h"
 
 using namespace std;
 class Model {
-    int m_id;
-
-
-};
-class Object{
-public:
-    Object(int id,const string& name){
-        m_name = name;
-        m_id =id;
-    }
-
-    int m_id;
+    map<string,BTree*> m_values;
     string m_name;
+    Model(Expression* expression);
+    void insert(Query* query);
+
 };
 
 
