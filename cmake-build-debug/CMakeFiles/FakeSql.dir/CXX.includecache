@@ -6,29 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.cpp
-sstream
--
-DataObject.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
-
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
 string
 -
 ../StatmentParser/StatementParser.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp
-Model.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
-string
--
-DataObject.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
-bTree.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
 bTree.h
@@ -50,10 +32,6 @@ string
 map
 -
 
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp
-StatementParser.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
-
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 ../Parser/Parser.h
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
@@ -61,26 +39,4 @@ list
 -
 iostream
 -
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.cpp
-Runner.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
-../StatmentParser/StatementParser.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
-
-C:/Users/Chris/CLionProjects/FakeSql/main.cpp
-iostream
--
-list
--
-FakeSql/Parser/Parser.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
-FakeSql/StatmentParser/StatementParser.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
-FakeSql/Model/Model.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.h
-FakeSql/Model/bTree.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
 

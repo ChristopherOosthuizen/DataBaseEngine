@@ -11,7 +11,9 @@ TreeNode::TreeNode(int keyCount, bool isLeaf) {
     m_maxKeyCount = keyCount;
     m_isLeaf = isLeaf;
     //allocate maximum memory possible childern
-    m_keys = new TreeVal*[2*m_maxKeyCount-1];
+    m_keys = new TreeVal*[2*m_maxKeyCount];
+    for(int i=0; i<2*m_maxKeyCount;i++ )
+        m_keys[i] = nullptr;
     m_childPointers = new TreeNode *[2*m_maxKeyCount];
 
     //set the initial size to 0
@@ -41,9 +43,10 @@ TreeVal* TreeNode::search(int key) {
     // find the first key that's bigger than key
     int i;
     for(i=0; i<m_currKeysCount&& key > m_keys[i]->m_value;i++);
-
+    TreeVal * val= m_keys[i];
+    int isnull = val !=NULL;
     //if the key equals this key return node
-    if(m_keys[i]->m_value == key)
+    if(m_keys[i] !=NULL &&m_keys[i]->m_value == key)
         return m_keys[i];
     //if key is not found and the node is a leaf return NULL
     if(m_isLeaf)

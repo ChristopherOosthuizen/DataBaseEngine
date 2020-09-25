@@ -598,6 +598,9 @@
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/main.cpp">
 			<Option target="FakeSql"/>
 		</Unit>
+		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/tst/ModelTest.cpp">
+			<Option target="FakeSql_tst"/>
+		</Unit>
 		<Unit filename="C:/Users/Chris/CLionProjects/FakeSql/tst/StatmentParserTest.cpp">
 			<Option target="FakeSql_tst"/>
 		</Unit>

@@ -6,15 +6,31 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+string
+-
+../StatmentParser/StatementParser.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp
+bTree.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+stdlib.h
+-
+
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.h
+iostream
+-
+DataObject.h
+C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.h
+list
+-
+
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
 string
 -
 map
 -
-
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp
-StatementParser.h
-C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 
 C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
 ../Parser/Parser.h

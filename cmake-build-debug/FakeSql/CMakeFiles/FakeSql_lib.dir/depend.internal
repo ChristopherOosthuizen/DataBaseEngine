@@ -29,8 +29,6 @@ FakeSql/CMakeFiles/FakeSql_lib.dir/StatmentParser/StatementParser.cpp.obj
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp
  C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
-FakeSql/CMakeFiles/FakeSql_lib.dir/StatmentRunner/Runner.cpp.obj
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.h
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.h
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.cpp
- C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Runner.h
+FakeSql/CMakeFiles/FakeSql_lib.dir/StatmentRunner/Instance.cpp.obj
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Instance.cpp
+ C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Instance.h

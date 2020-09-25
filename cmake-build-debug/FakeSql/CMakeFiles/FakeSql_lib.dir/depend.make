@@ -29,8 +29,6 @@ FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.obj: ..\Fa
 FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.obj: ..\FakeSql\StatmentParser\StatementParser.cpp
 FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.obj: ..\FakeSql\StatmentParser\StatementParser.h
 
-FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Runner.cpp.obj: ..\FakeSql\Parser\Parser.h
-FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Runner.cpp.obj: ..\FakeSql\StatmentParser\StatementParser.h
-FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Runner.cpp.obj: ..\FakeSql\StatmentRunner\Runner.cpp
-FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Runner.cpp.obj: ..\FakeSql\StatmentRunner\Runner.h
+FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Instance.cpp.obj: ..\FakeSql\StatmentRunner\Instance.cpp
+FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Instance.cpp.obj: ..\FakeSql\StatmentRunner\Instance.h
 

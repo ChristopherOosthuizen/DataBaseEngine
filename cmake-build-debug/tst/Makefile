@@ -177,6 +177,39 @@ FakeSql_tst\fast:
 	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
 .PHONY : FakeSql_tst\fast
 
+ModelTest.obj: ModelTest.cpp.obj
+
+.PHONY : ModelTest.obj
+
+# target to build an object file
+ModelTest.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\ModelTest.cpp.obj
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : ModelTest.cpp.obj
+
+ModelTest.i: ModelTest.cpp.i
+
+.PHONY : ModelTest.i
+
+# target to preprocess a source file
+ModelTest.cpp.i:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\ModelTest.cpp.i
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : ModelTest.cpp.i
+
+ModelTest.s: ModelTest.cpp.s
+
+.PHONY : ModelTest.s
+
+# target to generate assembly for a file
+ModelTest.cpp.s:
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\ModelTest.cpp.s
+	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\tst
+.PHONY : ModelTest.cpp.s
+
 StatmentParserTest.obj: StatmentParserTest.cpp.obj
 
 .PHONY : StatmentParserTest.obj
@@ -486,6 +519,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... FakeSql_tst
+	@echo ... ModelTest.obj
+	@echo ... ModelTest.i
+	@echo ... ModelTest.s
 	@echo ... StatmentParserTest.obj
 	@echo ... StatmentParserTest.i
 	@echo ... StatmentParserTest.s

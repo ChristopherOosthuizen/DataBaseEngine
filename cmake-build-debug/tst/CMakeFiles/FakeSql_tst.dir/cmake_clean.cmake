@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/FakeSql_tst.dir/ModelTest.cpp.obj"
   "CMakeFiles/FakeSql_tst.dir/StatmentParserTest.cpp.obj"
   "CMakeFiles/FakeSql_tst.dir/TokenizerTest.cpp.obj"
   "CMakeFiles/FakeSql_tst.dir/__/FakeSql/Errors/Errors.cpp.obj"

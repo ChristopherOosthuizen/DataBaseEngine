@@ -12,12 +12,13 @@ class TreeVal{
 
 public:
     int m_value;
-
     TreeVal(int value, DataObject* object){
         m_value = value;
         m_object = object;
     }
-
+    int getVal(){
+        return m_value;
+    }
     DataObject* m_object;
 };
 
