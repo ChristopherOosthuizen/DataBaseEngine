@@ -18,6 +18,8 @@ public:
     Model(Expression* expression);
 
     void insert(Query* query);
+    list<DataObject*>* search(Query* query);
+
 };
 
 

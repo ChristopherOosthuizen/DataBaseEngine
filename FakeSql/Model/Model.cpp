@@ -22,3 +22,26 @@ void Model::insert(Query *query) {
             mod->insert(del.second->m_key, obj);
         }
 }
+list<DataObject*>* Model::search(Query *query) {
+    list<DataObject*>* objects = new list<DataObject*>;
+    DataObject obj(query);
+    for(auto del:obj.m_definitions){
+        list<DataObject*>* temp = m_values[del.first]->findAll(del.second->m_key);
+        if(objects == nullptr){
+            delete objects;
+            objects = temp;
+        }else{
+            list<DataObject*>* act = new list<DataObject*>;
+            for(DataObject* objs:*objects){
+                if(std::find(temp->begin(),temp->end(),objs) != temp->end()){
+                    act->push_back(objs);
+                }
+
+            }
+            delete objects;
+            delete temp;
+            objects = act;
+        }
+    }
+    return objects;
+}
