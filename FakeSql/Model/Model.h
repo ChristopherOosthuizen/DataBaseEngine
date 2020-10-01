@@ -13,10 +13,11 @@ using namespace std;
 class Model {
     map<string,BTree*> m_values;
     string m_name;
+    list<DataObject*>* m_objects;
 
 public:
     Model(Expression* expression);
-
+    ~Model(){delete m_objects;}
     void insert(Query* query);
     list<DataObject*>* search(Query* query);
 

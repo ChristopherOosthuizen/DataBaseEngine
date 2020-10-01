@@ -21,6 +21,6 @@ TEST(BTREE, findAll){
     ASSERT_EQ(tree.findAll(12)->size(),31);
 }
 
-TEST(Model, construction){
+TEST(Model, Search){
 
 }

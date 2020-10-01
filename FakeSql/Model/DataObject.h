@@ -10,12 +10,12 @@
 using namespace std;
 
 class Literal{
-    string m_symbol;
     TokenType m_type;
 public:
     Literal(Definition* definition);
 
     int m_key;
+    string m_symbol;
 };
 
 class DataObject {
