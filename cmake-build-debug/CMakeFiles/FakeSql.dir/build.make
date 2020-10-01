@@ -38,19 +38,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\FakeSql
+CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles\FakeSql.dir\depend.make
@@ -63,135 +63,154 @@ include CMakeFiles\FakeSql.dir\flags.make
 
 CMakeFiles\FakeSql.dir\main.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FakeSql.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FakeSql.dir/main.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\main.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\main.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\main.cpp
 <<
 
 CMakeFiles\FakeSql.dir\main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/main.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\main.cpp
 <<
 
 CMakeFiles\FakeSql.dir\main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/main.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\main.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\main.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\main.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj: ..\FakeSql\Model\bTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\bTree.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\bTree.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\bTree.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\bTree.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\bTree.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\bTree.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj: ..\FakeSql\Parser\Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Parser\Parser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Parser\Parser.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Parser\Parser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Parser\Parser.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Parser\Parser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Parser\Parser.cpp
 <<
 
-CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
-CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj: ..\FakeSql\Errors\Errors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Errors/Errors.cpp.obj"
+CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
+CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj: ..\FakeSql\Server\ServSock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Server/ServSock.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Errors\Errors.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Server\ServSock.cpp
 <<
 
-CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Errors/Errors.cpp.i"
-	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Errors\Errors.cpp
+CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Server/ServSock.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Server\ServSock.cpp
 <<
 
-CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Errors/Errors.cpp.s"
+CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Server/ServSock.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Errors\Errors.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Server\ServSock.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj: ..\FakeSql\StatmentParser\StatementParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\StatmentParser\StatementParser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentParser\StatementParser.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\StatmentParser\StatementParser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentParser\StatementParser.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\StatmentParser\StatementParser.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentParser\StatementParser.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj: ..\FakeSql\Model\Model.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\Model.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\Model.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\Model.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\Model.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\Model.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\Model.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
 CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj: ..\FakeSql\Model\DataObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\DataObject.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\DataObject.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.i"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\DataObject.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\DataObject.cpp
 <<
 
 CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.s"
 	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.s /c C:\Users\Chris\CLionProjects\FakeSql\FakeSql\Model\DataObject.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\Model\DataObject.cpp
+<<
+
+CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj: CMakeFiles\FakeSql.dir\flags.make
+CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj: ..\FakeSql\StatmentRunner\Instance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj /FdCMakeFiles\FakeSql.dir\ /FS -c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentRunner\Instance.cpp
+<<
+
+CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.i"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe > CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentRunner\Instance.cpp
+<<
+
+CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.s"
+	C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.s /c C:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql\StatmentRunner\Instance.cpp
 <<
 
 # Object files for target FakeSql
@@ -199,10 +218,11 @@ FakeSql_OBJECTS = \
 "CMakeFiles\FakeSql.dir\main.cpp.obj" \
 "CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj" \
 "CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj" \
-"CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj" \
+"CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj" \
 "CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj" \
 "CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj" \
-"CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj"
+"CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj" \
+"CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj"
 
 # External object files for target FakeSql
 FakeSql_EXTERNAL_OBJECTS =
@@ -210,15 +230,16 @@ FakeSql_EXTERNAL_OBJECTS =
 FakeSql.exe: CMakeFiles\FakeSql.dir\main.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Model\bTree.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.obj
-FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj
+FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Model\Model.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\Model\DataObject.cpp.obj
+FakeSql.exe: CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj
 FakeSql.exe: CMakeFiles\FakeSql.dir\build.make
 FakeSql.exe: CMakeFiles\FakeSql.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable FakeSql.exe"
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\FakeSql.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\FakeSql.dir\objects1.rsp @<<
- /out:FakeSql.exe /implib:FakeSql.lib /pdb:C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FakeSql.exe"
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\FakeSql.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~3\2019\COMMUN~1\VC\Tools\MSVC\1427~1.291\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\FakeSql.dir\objects1.rsp @<<
+ /out:FakeSql.exe /implib:FakeSql.lib /pdb:C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 
 # Rule to build all files generated by this target.
@@ -231,6 +252,6 @@ CMakeFiles\FakeSql.dir\clean:
 .PHONY : CMakeFiles\FakeSql.dir\clean
 
 CMakeFiles\FakeSql.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\Chris\CLionProjects\FakeSql C:\Users\Chris\CLionProjects\FakeSql C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles\FakeSql.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" C:\Users\Chris\CLionProjects\DataBaseEngine C:\Users\Chris\CLionProjects\DataBaseEngine C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles\FakeSql.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles\FakeSql.dir\depend
 

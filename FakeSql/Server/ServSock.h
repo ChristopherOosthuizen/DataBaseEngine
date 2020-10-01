@@ -4,10 +4,19 @@
 
 #ifndef FAKESQL_SERVSOCK_H
 #define FAKESQL_SERVSOCK_H
-
+#include <winsock2.h>
+#include <ws2tcpip.h>
 
 class ServSock {
-
+    SOCKET m_sock;
+public:
+    ServSock(char* port);
+    ~ServSock();
+    static char read(SOCKET sock);
+    static std::string readAll(SOCKET sock);
+    static void write(SOCKET sock,std::string message);
+    SOCKET connect();
+    void close(SOCKET sock);
 };
 
 

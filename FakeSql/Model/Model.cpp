@@ -13,7 +13,12 @@ Model::Model(Expression *expression) {
 
 void Model::insert(Query *query) {
     auto* obj = new DataObject(query);
-    for(const auto& del: obj->m_definitions){
-        m_values[del.first]->insert(del.second->m_key,obj);
-    }
+        for (const auto &del: obj->m_definitions) {
+            BTree* mod = m_values[del.first];
+            if(mod == nullptr){
+                delete obj;
+                throw string("unknown field");
+            }
+            mod->insert(del.second->m_key, obj);
+        }
 }

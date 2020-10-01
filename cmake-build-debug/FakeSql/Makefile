@@ -43,19 +43,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\FakeSql
+CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -63,31 +63,31 @@ CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
 # Special rule for the target install/local
 install\local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install\local
 
 # Special rule for the target install/local
 install\local\fast: preinstall\fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install\local\fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install\fast: preinstall\fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install\fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,7 +98,7 @@ edit_cache\fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -118,18 +118,18 @@ list_install_components\fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql\CMakeFiles\progress.marks
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\all
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles 0
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\clean
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : clean
 
 # The main clean target
@@ -139,30 +139,30 @@ clean\fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\preinstall
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall\fast:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\preinstall
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : preinstall\fast
 
 # clear depends
 depend:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : depend
 
 # Convenience name for target.
 FakeSql\CMakeFiles\FakeSql_run.dir\rule:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\rule
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : FakeSql\CMakeFiles\FakeSql_run.dir\rule
 
 # Convenience name for target.
@@ -172,16 +172,16 @@ FakeSql_run: FakeSql\CMakeFiles\FakeSql_run.dir\rule
 
 # fast build rule for target.
 FakeSql_run\fast:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\build
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : FakeSql_run\fast
 
 # Convenience name for target.
 FakeSql\CMakeFiles\FakeSql_lib.dir\rule:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\rule
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : FakeSql\CMakeFiles\FakeSql_lib.dir\rule
 
 # Convenience name for target.
@@ -191,46 +191,10 @@ FakeSql_lib: FakeSql\CMakeFiles\FakeSql_lib.dir\rule
 
 # fast build rule for target.
 FakeSql_lib\fast:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\build
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : FakeSql_lib\fast
-
-Errors\Errors.obj: Errors\Errors.cpp.obj
-
-.PHONY : Errors\Errors.obj
-
-# target to build an object file
-Errors\Errors.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Errors\Errors.cpp.obj
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Errors\Errors.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
-.PHONY : Errors\Errors.cpp.obj
-
-Errors\Errors.i: Errors\Errors.cpp.i
-
-.PHONY : Errors\Errors.i
-
-# target to preprocess a source file
-Errors\Errors.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Errors\Errors.cpp.i
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Errors\Errors.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
-.PHONY : Errors\Errors.cpp.i
-
-Errors\Errors.s: Errors\Errors.cpp.s
-
-.PHONY : Errors\Errors.s
-
-# target to generate assembly for a file
-Errors\Errors.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Errors\Errors.cpp.s
-	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Errors\Errors.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
-.PHONY : Errors\Errors.cpp.s
 
 Model\DataObject.obj: Model\DataObject.cpp.obj
 
@@ -238,10 +202,10 @@ Model\DataObject.obj: Model\DataObject.cpp.obj
 
 # target to build an object file
 Model\DataObject.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\DataObject.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\DataObject.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\DataObject.cpp.obj
 
 Model\DataObject.i: Model\DataObject.cpp.i
@@ -250,10 +214,10 @@ Model\DataObject.i: Model\DataObject.cpp.i
 
 # target to preprocess a source file
 Model\DataObject.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\DataObject.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\DataObject.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\DataObject.cpp.i
 
 Model\DataObject.s: Model\DataObject.cpp.s
@@ -262,10 +226,10 @@ Model\DataObject.s: Model\DataObject.cpp.s
 
 # target to generate assembly for a file
 Model\DataObject.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\DataObject.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\DataObject.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\DataObject.cpp.s
 
 Model\Model.obj: Model\Model.cpp.obj
@@ -274,10 +238,10 @@ Model\Model.obj: Model\Model.cpp.obj
 
 # target to build an object file
 Model\Model.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\Model.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\Model.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\Model.cpp.obj
 
 Model\Model.i: Model\Model.cpp.i
@@ -286,10 +250,10 @@ Model\Model.i: Model\Model.cpp.i
 
 # target to preprocess a source file
 Model\Model.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\Model.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\Model.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\Model.cpp.i
 
 Model\Model.s: Model\Model.cpp.s
@@ -298,10 +262,10 @@ Model\Model.s: Model\Model.cpp.s
 
 # target to generate assembly for a file
 Model\Model.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\Model.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\Model.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\Model.cpp.s
 
 Model\bTree.obj: Model\bTree.cpp.obj
@@ -310,10 +274,10 @@ Model\bTree.obj: Model\bTree.cpp.obj
 
 # target to build an object file
 Model\bTree.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\bTree.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\bTree.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\bTree.cpp.obj
 
 Model\bTree.i: Model\bTree.cpp.i
@@ -322,10 +286,10 @@ Model\bTree.i: Model\bTree.cpp.i
 
 # target to preprocess a source file
 Model\bTree.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\bTree.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\bTree.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\bTree.cpp.i
 
 Model\bTree.s: Model\bTree.cpp.s
@@ -334,10 +298,10 @@ Model\bTree.s: Model\bTree.cpp.s
 
 # target to generate assembly for a file
 Model\bTree.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Model\bTree.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Model\bTree.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Model\bTree.cpp.s
 
 Parser\Parser.obj: Parser\Parser.cpp.obj
@@ -346,10 +310,10 @@ Parser\Parser.obj: Parser\Parser.cpp.obj
 
 # target to build an object file
 Parser\Parser.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Parser\Parser.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Parser\Parser.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Parser\Parser.cpp.obj
 
 Parser\Parser.i: Parser\Parser.cpp.i
@@ -358,10 +322,10 @@ Parser\Parser.i: Parser\Parser.cpp.i
 
 # target to preprocess a source file
 Parser\Parser.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Parser\Parser.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Parser\Parser.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Parser\Parser.cpp.i
 
 Parser\Parser.s: Parser\Parser.cpp.s
@@ -370,11 +334,47 @@ Parser\Parser.s: Parser\Parser.cpp.s
 
 # target to generate assembly for a file
 Parser\Parser.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Parser\Parser.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Parser\Parser.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : Parser\Parser.cpp.s
+
+Server\ServSock.obj: Server\ServSock.cpp.obj
+
+.PHONY : Server\ServSock.obj
+
+# target to build an object file
+Server\ServSock.cpp.obj:
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Server\ServSock.cpp.obj
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Server\ServSock.cpp.obj
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
+.PHONY : Server\ServSock.cpp.obj
+
+Server\ServSock.i: Server\ServSock.cpp.i
+
+.PHONY : Server\ServSock.i
+
+# target to preprocess a source file
+Server\ServSock.cpp.i:
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Server\ServSock.cpp.i
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Server\ServSock.cpp.i
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
+.PHONY : Server\ServSock.cpp.i
+
+Server\ServSock.s: Server\ServSock.cpp.s
+
+.PHONY : Server\ServSock.s
+
+# target to generate assembly for a file
+Server\ServSock.cpp.s:
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\Server\ServSock.cpp.s
+	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\Server\ServSock.cpp.s
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
+.PHONY : Server\ServSock.cpp.s
 
 StatmentParser\StatementParser.obj: StatmentParser\StatementParser.cpp.obj
 
@@ -382,10 +382,10 @@ StatmentParser\StatementParser.obj: StatmentParser\StatementParser.cpp.obj
 
 # target to build an object file
 StatmentParser\StatementParser.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentParser\StatementParser.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentParser\StatementParser.cpp.obj
 
 StatmentParser\StatementParser.i: StatmentParser\StatementParser.cpp.i
@@ -394,10 +394,10 @@ StatmentParser\StatementParser.i: StatmentParser\StatementParser.cpp.i
 
 # target to preprocess a source file
 StatmentParser\StatementParser.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentParser\StatementParser.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentParser\StatementParser.cpp.i
 
 StatmentParser\StatementParser.s: StatmentParser\StatementParser.cpp.s
@@ -406,10 +406,10 @@ StatmentParser\StatementParser.s: StatmentParser\StatementParser.cpp.s
 
 # target to generate assembly for a file
 StatmentParser\StatementParser.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentParser\StatementParser.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentParser\StatementParser.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentParser\StatementParser.cpp.s
 
 StatmentRunner\Instance.obj: StatmentRunner\Instance.cpp.obj
@@ -418,10 +418,10 @@ StatmentRunner\Instance.obj: StatmentRunner\Instance.cpp.obj
 
 # target to build an object file
 StatmentRunner\Instance.cpp.obj:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentRunner\Instance.cpp.obj
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Instance.cpp.obj
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentRunner\Instance.cpp.obj
 
 StatmentRunner\Instance.i: StatmentRunner\Instance.cpp.i
@@ -430,10 +430,10 @@ StatmentRunner\Instance.i: StatmentRunner\Instance.cpp.i
 
 # target to preprocess a source file
 StatmentRunner\Instance.cpp.i:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentRunner\Instance.cpp.i
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Instance.cpp.i
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentRunner\Instance.cpp.i
 
 StatmentRunner\Instance.s: StatmentRunner\Instance.cpp.s
@@ -442,10 +442,10 @@ StatmentRunner\Instance.s: StatmentRunner\Instance.cpp.s
 
 # target to generate assembly for a file
 StatmentRunner\Instance.cpp.s:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_run.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_run.dir\StatmentRunner\Instance.cpp.s
 	$(MAKE) $(MAKESILENT) -f FakeSql\CMakeFiles\FakeSql_lib.dir\build.make /nologo -$(MAKEFLAGS) FakeSql\CMakeFiles\FakeSql_lib.dir\StatmentRunner\Instance.cpp.s
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : StatmentRunner\Instance.cpp.s
 
 # Help Target
@@ -461,9 +461,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... FakeSql_lib
 	@echo ... FakeSql_run
-	@echo ... Errors/Errors.obj
-	@echo ... Errors/Errors.i
-	@echo ... Errors/Errors.s
 	@echo ... Model/DataObject.obj
 	@echo ... Model/DataObject.i
 	@echo ... Model/DataObject.s
@@ -476,6 +473,9 @@ help:
 	@echo ... Parser/Parser.obj
 	@echo ... Parser/Parser.i
 	@echo ... Parser/Parser.s
+	@echo ... Server/ServSock.obj
+	@echo ... Server/ServSock.i
+	@echo ... Server/ServSock.s
 	@echo ... StatmentParser/StatementParser.obj
 	@echo ... StatmentParser/StatementParser.i
 	@echo ... StatmentParser/StatementParser.s
@@ -493,8 +493,8 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
-	cd C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\FakeSql
+	cd C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\FakeSql
 .PHONY : cmake_check_build_system
 

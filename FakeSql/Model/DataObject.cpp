@@ -6,8 +6,8 @@
 #include "DataObject.h"
 
 Literal::Literal(Definition *definition) {
-    m_symbol = definition->m_iden->m_symbol;
-    m_type = definition->m_iden->m_type;
+    m_symbol = definition->m_val->m_token->m_symbol;
+    m_type = definition->m_val->m_token->m_type;
     stringstream stream(m_symbol);
     switch(m_type){
         case TokenType::BOOL: m_key = "TRUE"== m_symbol?1:0;break;
@@ -15,7 +15,7 @@ Literal::Literal(Definition *definition) {
             hash<string> hasher;
             m_key = hasher(m_symbol);
             break;
-        case TokenType::NUM:
+        case TokenType::DOUBLE:
             stream >>m_key;break;
         default:
             StatementParser::throwError("Unknown type",definition->m_iden);

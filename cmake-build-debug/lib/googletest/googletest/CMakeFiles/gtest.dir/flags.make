@@ -6,5 +6,5 @@ CXX_FLAGS = /DWIN32 /D_WINDOWS /GR  /Zi /Ob0 /Od /RTC1 -MDd   -GS -W4 -WX -wd425
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -IC:\Users\Chris\CLionProjects\FakeSql\FakeSql -IC:\Users\Chris\CLionProjects\FakeSql\lib\googletest\googletest\include -IC:\Users\Chris\CLionProjects\FakeSql\lib\googletest\googletest 
+CXX_INCLUDES = -IC:\Users\Chris\CLionProjects\DataBaseEngine\FakeSql -IC:\Users\Chris\CLionProjects\DataBaseEngine\lib\googletest\googletest\include -IC:\Users\Chris\CLionProjects\DataBaseEngine\lib\googletest\googletest 
 

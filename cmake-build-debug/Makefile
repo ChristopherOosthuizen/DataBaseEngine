@@ -43,19 +43,19 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\FakeSql
+CMAKE_SOURCE_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -63,31 +63,31 @@ CMAKE_BINARY_DIR = C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug
 # Special rule for the target install/local
 install\local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install\local
 
 # Special rule for the target install/local
 install\local\fast: preinstall\fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install\local\fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install\fast: preinstall\fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
 .PHONY : install\fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,7 +98,7 @@ edit_cache\fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.6948.80\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -118,9 +118,9 @@ list_install_components\fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\FakeSql\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -252,33 +252,6 @@ FakeSql_tst\fast:
 	$(MAKE) $(MAKESILENT) -f tst\CMakeFiles\FakeSql_tst.dir\build.make /nologo -$(MAKEFLAGS) tst\CMakeFiles\FakeSql_tst.dir\build
 .PHONY : FakeSql_tst\fast
 
-FakeSql\Errors\Errors.obj: FakeSql\Errors\Errors.cpp.obj
-
-.PHONY : FakeSql\Errors\Errors.obj
-
-# target to build an object file
-FakeSql\Errors\Errors.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.obj
-.PHONY : FakeSql\Errors\Errors.cpp.obj
-
-FakeSql\Errors\Errors.i: FakeSql\Errors\Errors.cpp.i
-
-.PHONY : FakeSql\Errors\Errors.i
-
-# target to preprocess a source file
-FakeSql\Errors\Errors.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.i
-.PHONY : FakeSql\Errors\Errors.cpp.i
-
-FakeSql\Errors\Errors.s: FakeSql\Errors\Errors.cpp.s
-
-.PHONY : FakeSql\Errors\Errors.s
-
-# target to generate assembly for a file
-FakeSql\Errors\Errors.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Errors\Errors.cpp.s
-.PHONY : FakeSql\Errors\Errors.cpp.s
-
 FakeSql\Model\DataObject.obj: FakeSql\Model\DataObject.cpp.obj
 
 .PHONY : FakeSql\Model\DataObject.obj
@@ -387,6 +360,33 @@ FakeSql\Parser\Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Parser\Parser.cpp.s
 .PHONY : FakeSql\Parser\Parser.cpp.s
 
+FakeSql\Server\ServSock.obj: FakeSql\Server\ServSock.cpp.obj
+
+.PHONY : FakeSql\Server\ServSock.obj
+
+# target to build an object file
+FakeSql\Server\ServSock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.obj
+.PHONY : FakeSql\Server\ServSock.cpp.obj
+
+FakeSql\Server\ServSock.i: FakeSql\Server\ServSock.cpp.i
+
+.PHONY : FakeSql\Server\ServSock.i
+
+# target to preprocess a source file
+FakeSql\Server\ServSock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.i
+.PHONY : FakeSql\Server\ServSock.cpp.i
+
+FakeSql\Server\ServSock.s: FakeSql\Server\ServSock.cpp.s
+
+.PHONY : FakeSql\Server\ServSock.s
+
+# target to generate assembly for a file
+FakeSql\Server\ServSock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\Server\ServSock.cpp.s
+.PHONY : FakeSql\Server\ServSock.cpp.s
+
 FakeSql\StatmentParser\StatementParser.obj: FakeSql\StatmentParser\StatementParser.cpp.obj
 
 .PHONY : FakeSql\StatmentParser\StatementParser.obj
@@ -413,6 +413,33 @@ FakeSql\StatmentParser\StatementParser.s: FakeSql\StatmentParser\StatementParser
 FakeSql\StatmentParser\StatementParser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentParser\StatementParser.cpp.s
 .PHONY : FakeSql\StatmentParser\StatementParser.cpp.s
+
+FakeSql\StatmentRunner\Instance.obj: FakeSql\StatmentRunner\Instance.cpp.obj
+
+.PHONY : FakeSql\StatmentRunner\Instance.obj
+
+# target to build an object file
+FakeSql\StatmentRunner\Instance.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj
+.PHONY : FakeSql\StatmentRunner\Instance.cpp.obj
+
+FakeSql\StatmentRunner\Instance.i: FakeSql\StatmentRunner\Instance.cpp.i
+
+.PHONY : FakeSql\StatmentRunner\Instance.i
+
+# target to preprocess a source file
+FakeSql\StatmentRunner\Instance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.i
+.PHONY : FakeSql\StatmentRunner\Instance.cpp.i
+
+FakeSql\StatmentRunner\Instance.s: FakeSql\StatmentRunner\Instance.cpp.s
+
+.PHONY : FakeSql\StatmentRunner\Instance.s
+
+# target to generate assembly for a file
+FakeSql\StatmentRunner\Instance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FakeSql.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.s
+.PHONY : FakeSql\StatmentRunner\Instance.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -460,9 +487,6 @@ help:
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... FakeSql/Errors/Errors.obj
-	@echo ... FakeSql/Errors/Errors.i
-	@echo ... FakeSql/Errors/Errors.s
 	@echo ... FakeSql/Model/DataObject.obj
 	@echo ... FakeSql/Model/DataObject.i
 	@echo ... FakeSql/Model/DataObject.s
@@ -475,9 +499,15 @@ help:
 	@echo ... FakeSql/Parser/Parser.obj
 	@echo ... FakeSql/Parser/Parser.i
 	@echo ... FakeSql/Parser/Parser.s
+	@echo ... FakeSql/Server/ServSock.obj
+	@echo ... FakeSql/Server/ServSock.i
+	@echo ... FakeSql/Server/ServSock.s
 	@echo ... FakeSql/StatmentParser/StatementParser.obj
 	@echo ... FakeSql/StatmentParser/StatementParser.i
 	@echo ... FakeSql/StatmentParser/StatementParser.s
+	@echo ... FakeSql/StatmentRunner/Instance.obj
+	@echo ... FakeSql/StatmentRunner/Instance.i
+	@echo ... FakeSql/StatmentRunner/Instance.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

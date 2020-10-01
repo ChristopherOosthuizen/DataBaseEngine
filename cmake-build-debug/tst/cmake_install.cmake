@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Chris/CLionProjects/FakeSql/tst
+# Install script for directory: C:/Users/Chris/CLionProjects/DataBaseEngine/tst
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

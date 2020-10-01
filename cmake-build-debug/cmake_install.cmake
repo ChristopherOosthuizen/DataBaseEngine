@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Chris/CLionProjects/FakeSql
+# Install script for directory: C:/Users/Chris/CLionProjects/DataBaseEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,17 +34,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/cmake_install.cmake")
+  include("C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/lib/googletest/cmake_install.cmake")
+  include("C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/tst/cmake_install.cmake")
+  include("C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/tst/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

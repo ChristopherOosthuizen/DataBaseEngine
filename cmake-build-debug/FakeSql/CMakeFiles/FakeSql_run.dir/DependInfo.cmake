@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Errors/Errors.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Errors/Errors.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/DataObject.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/DataObject.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/Model.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/Model.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Model/bTree.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/bTree.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/Parser/Parser.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Parser/Parser.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentParser/StatementParser.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/StatmentParser/StatementParser.cpp.obj"
-  "C:/Users/Chris/CLionProjects/FakeSql/FakeSql/StatmentRunner/Instance.cpp" "C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/StatmentRunner/Instance.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/DataObject.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/DataObject.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/Model.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/Model.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/bTree.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Model/bTree.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Parser/Parser.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Parser/Parser.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Server/ServSock.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/Server/ServSock.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/StatmentParser/StatementParser.cpp.obj"
+  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentRunner/Instance.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/FakeSql/CMakeFiles/FakeSql_run.dir/StatmentRunner/Instance.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Chris/CLionProjects/FakeSql/lib/googletest
+# Install script for directory: C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Chris/CLionProjects/FakeSql/cmake-build-debug/lib/googletest/googlemock/cmake_install.cmake")
+  include("C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googlemock/cmake_install.cmake")
 
 endif()
 
