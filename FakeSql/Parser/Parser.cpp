@@ -35,6 +35,7 @@ Token* Parser::next() {
             }
             return new Token(":",TokenType::COLIN,m_id,m_line,m_pos);
         case '\b':
+        case '\0':
         case ' ': m_id--;
             return next();
         case '"': return findString();
@@ -43,7 +44,7 @@ Token* Parser::next() {
         return findNumber(c);
     if(((c >='A'&&c <='Z')||(c >='a'&&c<='z')))
         return findIden(c);
-    throw "UNKOWN carcter used";
+    throw string("UNKOWN char  "+c);
     return NULL;
 
 

@@ -82,7 +82,7 @@ std::string ServSock::readAll(SOCKET sock) {
             throw std::string("Connection timed out");
         }
         c = read(sock);
-    }while(c == -52 || !(result.at(result.length()-1) =='\n' && (c =='\n')));
-    return result.substr(0,result.length()-1);
+    }while(c == -52 || c !='\a');
+    return result;
 }
 

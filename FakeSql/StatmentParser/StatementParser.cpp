@@ -55,8 +55,13 @@ Query* StatementParser::createQuery() {
 Block* StatementParser::createBlock() {
     Token* token = advance();
     auto* definitions = new list<Definition*>;
-    if(token->m_type == TokenType::OPENING_BRACE){
+    if(token == NULL ||token->m_type == TokenType::OPENING_BRACE){
         while(!isFinished() &&(peek()->m_type) != TokenType::CLOSING_BRACE){
+            definitions->push_back(createDefinition());
+        }
+        advance();
+    }else{
+        while(!isFinished() &&(peek()->m_type) != TokenType::NEW_LINE){
             definitions->push_back(createDefinition());
         }
         advance();
