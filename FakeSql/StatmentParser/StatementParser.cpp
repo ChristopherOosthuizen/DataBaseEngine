@@ -14,10 +14,9 @@ Token* StatementParser::advance() {
 }
 
 Token *StatementParser::peek() {
-    if(isFinished())
-        return NULL;
-    auto dupe = m_it;
-    return *(++dupe);
+    Token* adv = advance();
+    back();
+    return adv;
 }
 
 
@@ -28,8 +27,10 @@ StatementParser::StatementParser(list<Token *> *tokens) {
 }
 
 Statement *StatementParser::next() {
-    Token* token = advance();
-
+    Token* token = advance(TokenType::NEW_LINE);
+    if(token == NULL){
+        throw string("At END");
+    }
     switch(token->m_type){
         case TokenType::DELETE:
         case TokenType::SEARCH:
@@ -71,7 +72,8 @@ Block* StatementParser::createBlock() {
     return new Block(definitions);
 }
 int StatementParser::isFinished() {
-    return (m_it) == --m_tokens->end();
+    int result = (m_it) == --m_tokens->end() ||(m_it) == m_tokens->end();
+    return result;
 }
 
 Definition *StatementParser::createDefinition() {
@@ -119,6 +121,11 @@ Loader *StatementParser::createLoad() {
     match(token,TokenType::STRING,"uNKOWN type");
 
     return new Loader(token);
+}
+
+Token *StatementParser::back() {
+
+    return *(m_it--);
 }
 
 Type::Type(Token *token) {

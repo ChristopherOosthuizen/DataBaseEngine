@@ -96,6 +96,7 @@ class StatementParser {
     Token* advance();
     Token* advance(TokenType ignore);
     Token* peek();
+    Token* back();
 public:
     friend class Expression;
     static void throwError(const string& message,Token* token);

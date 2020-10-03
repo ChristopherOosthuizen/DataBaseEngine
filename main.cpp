@@ -1,10 +1,7 @@
 #include <iostream>
 #include <list>
+#include<thread>
 #include <StatmentRunner/Instance.h>
-#include "FakeSql/Parser/Parser.h"
-#include "FakeSql/StatmentParser/StatementParser.h"
-#include "FakeSql/Model/Model.h"
-#include "FakeSql/Model/bTree.h"
 #include "Server/ServSock.h"
 void readLine(string* str){
     char c=0;
@@ -21,8 +18,8 @@ void readLine(string* str){
 
 void handleConnection(SOCKET sock,Instance* instance){
     string* input = new string;
+    SetCurrentDirectory((ServSock::readAll(sock).c_str()));
     while(1){
-        std::cout << ">";
         *input = ServSock::readAll(sock);
         if((input->at(0) ==':' && input->at(1)=='q'))
             break;
@@ -42,15 +39,16 @@ void handleConnection(SOCKET sock,Instance* instance){
         *input ="";
     }
     delete input;
+    ServSock::close(sock);
 }
 
 int main() {
     Instance* inst = new Instance;
     ServSock sock("8080");
     while(1) {
-        SOCKET soc = sock.connect();
-        handleConnection(soc, inst);
-        sock.close(soc);
+            SOCKET soc = sock.connect();
+            thread name(handleConnection,soc, inst);
+            name.detach();
     }
 
 }

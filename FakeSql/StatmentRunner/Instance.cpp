@@ -2,6 +2,7 @@
 // Created by Chris on 9/24/2020.
 //
 
+#include <fstream>
 #include "Instance.h"
 
 string Instance::handle(Statement *statement) {
@@ -15,11 +16,32 @@ string Instance::handle(Statement *statement) {
                 return "FAILED UNKOWN COMMAND";
         }
     }else if(Loader* loader = dynamic_cast<Loader*>(statement)){
-        return "loaded data base";
+        return handleLoad(loader);
     }
     else{
         return "UNKOWN STATEMENT";
     }
+}
+string Instance::handleLoad(Loader *load) {
+    string* input = new string;
+    readFromFile(load->m_address->m_symbol,input);
+    Parser parser(input);
+    auto* tokens = new std::list<Token*>;
+    while(!parser.isDone()){
+        Token* token = parser.next();
+        tokens->push_back(token);
+    }
+    StatementParser stat(tokens);
+    string result = "LOAD STARTED\n";
+    while((!stat.isFinished())){
+        try {
+            result += this->handle(stat.next())+'\n';
+        }catch(string& str){
+            result += str+'\n';
+            break;
+        }
+    }
+    return result;
 }
 string Instance::handleCreate(Expression *expression) {
     if(expression->m_type->m_token->m_type == TokenType::MODEL){
@@ -53,5 +75,19 @@ string Instance::handleSearch(Expression *expression) {
             result+="\n";
         }
         return result;
+    }
+}
+
+void Instance::readFromFile(string adress,string* result) {
+    fstream myfile ;
+    myfile.open(adress,ios::in);
+    if (myfile.is_open())
+    {
+        string res;
+        while ( getline(myfile,res) )
+        {
+            *result+=res+'\n';
+        }
+        myfile.close();
     }
 }

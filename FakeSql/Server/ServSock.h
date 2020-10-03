@@ -6,7 +6,7 @@
 #define FAKESQL_SERVSOCK_H
 #include <winsock2.h>
 #include <ws2tcpip.h>
-
+using namespace std;
 class ServSock {
     SOCKET m_sock;
 public:
@@ -16,7 +16,7 @@ public:
     static std::string readAll(SOCKET sock);
     static void write(SOCKET sock,std::string message);
     SOCKET connect();
-    void close(SOCKET sock);
+    static void close(SOCKET sock);
 };
 
 
