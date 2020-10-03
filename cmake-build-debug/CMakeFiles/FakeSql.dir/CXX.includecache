@@ -6,21 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Parser/Parser.h
-string
--
-map
--
-
-C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.cpp
-StatementParser.h
-C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.h
-
-C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.h
-../Parser/Parser.h
-C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Parser/Parser.h
-list
+C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Server/ServSock.cpp
+cstdio
 -
 iostream
+-
+ServSock.h
+C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Server/ServSock.h
+
+C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Server/ServSock.h
+winsock2.h
+-
+ws2tcpip.h
 -
 

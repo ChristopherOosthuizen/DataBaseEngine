@@ -6,7 +6,7 @@
 #define FAKESQL_PARSER_H
 #include <string>
 #include <map>
- enum class TokenType{IDEN,NUM,STRINGIDEN,STRING,BOOLIDEN,BOOL,MODEL,OPENING_BRACE,CLOSING_BRACE,DATA_OBJECT,NEW_LINE,SEMICOLIN,COLIN,DOUBLE,CREATE,DELETE,EDIT,SEARCH};
+ enum class TokenType{IDEN,NUM,STRINGIDEN,STRING,BOOLIDEN,BOOL,MODEL,OPENING_BRACE,CLOSING_BRACE,DATA_OBJECT,NEW_LINE,SEMICOLIN,COLIN,DOUBLE,CREATE,DELETE,EDIT,SEARCH,LOAD};
 using namespace std;
 class Parser {
     string* m_content;
@@ -15,7 +15,7 @@ class Parser {
     int m_isDone;
     int m_pos;
     int m_line;
-    map<string,TokenType> s_keys = {{"STRING",TokenType::STRINGIDEN},{"NUM",TokenType::NUM},{"BOOL",TokenType::BOOLIDEN},{"MODEL",TokenType::MODEL},{"OBJECT",TokenType::DATA_OBJECT},{"TRUE",TokenType::BOOL},{"FALSE",TokenType::BOOL},{"CREATE",TokenType::CREATE},{"EDIT",TokenType::EDIT},{"SEARCH",TokenType::SEARCH},{"DELETE",TokenType::DELETE}};
+    map<string,TokenType> s_keys = {{"STRING",TokenType::STRINGIDEN},{"NUM",TokenType::NUM},{"BOOL",TokenType::BOOLIDEN},{"MODEL",TokenType::MODEL},{"OBJECT",TokenType::DATA_OBJECT},{"TRUE",TokenType::BOOL},{"FALSE",TokenType::BOOL},{"CREATE",TokenType::CREATE},{"EDIT",TokenType::EDIT},{"SEARCH",TokenType::SEARCH},{"DELETE",TokenType::DELETE},{"LOAD",TokenType::LOAD}};
     friend struct Token;
     char advance();
     char peek();

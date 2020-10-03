@@ -4,11 +4,21 @@
 
 #include "Instance.h"
 
-string Instance::handle(Expression *expression) {
-    switch(expression->m_command->m_token->m_type) {
-        case TokenType::CREATE:   return handleCreate(expression);
-        case TokenType::SEARCH: return handleSearch(expression);
-        default:return "FAILED UNKOWN COMMAND";
+string Instance::handle(Statement *statement) {
+    if(Expression* expression = dynamic_cast<Expression*>(statement)) {
+        switch (expression->m_command->m_token->m_type) {
+            case TokenType::CREATE:
+                return handleCreate(expression);
+            case TokenType::SEARCH:
+                return handleSearch(expression);
+            default:
+                return "FAILED UNKOWN COMMAND";
+        }
+    }else if(Loader* loader = dynamic_cast<Loader*>(statement)){
+        return "loaded data base";
+    }
+    else{
+        return "UNKOWN STATEMENT";
     }
 }
 string Instance::handleCreate(Expression *expression) {

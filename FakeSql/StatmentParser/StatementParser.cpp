@@ -27,7 +27,7 @@ StatementParser::StatementParser(list<Token *> *tokens) {
     m_it = tokens->begin();
 }
 
-Expression *StatementParser::next() {
+Statement *StatementParser::next() {
     Token* token = advance();
 
     switch(token->m_type){
@@ -36,6 +36,8 @@ Expression *StatementParser::next() {
         case TokenType::CREATE:
         case TokenType::EDIT:
             return createExpression( token);
+        case TokenType::LOAD:
+            return createLoad();
     }
     throwError("UNKNOWN command",token);
     return nullptr;
@@ -110,6 +112,13 @@ Token *StatementParser::advance(TokenType ignore) {
     while(token != NULL &&token->m_type == ignore)
         token = advance();
     return token;
+}
+
+Loader *StatementParser::createLoad() {
+    Token* token = advance();
+    match(token,TokenType::STRING,"uNKOWN type");
+
+    return new Loader(token);
 }
 
 Type::Type(Token *token) {

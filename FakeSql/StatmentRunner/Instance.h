@@ -13,7 +13,7 @@ using namespace std;
 class Instance {
     map<string,Model*> m_models;
 public:
-    string handle(Expression* expression);
+    string handle(Statement* expression);
     string handleCreate(Expression* expression);
     string handleSearch(Expression* expression);
 };

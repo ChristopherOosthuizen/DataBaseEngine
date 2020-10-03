@@ -14,27 +14,35 @@ class Statement{
 public:
     virtual void run();
 };
-class Value: Statement{
+class Value: public Statement{
 public:
     Token* m_token;
 
     Value(Token* token);
 
 };
-class Command: Statement{
+class Command: public Statement{
 public:
     Token* m_token;
     explicit Command(Token* token){
         m_token = token;
     }
 };
+class  Loader: public Statement{
+public:
+    Token* m_address;
+    explicit Loader(Token* address){
 
-class Type: Statement{
+        m_address = address;
+
+    }
+};
+class Type: public Statement{
 public:
     Token* m_token;
     explicit Type(Token* token);
 };
-class Definition:Statement{
+class Definition:public Statement{
 public:
     Token* m_iden;
     Value* m_val;
@@ -43,14 +51,14 @@ public:
         m_val= value;
     }
 };
-class Block: Statement{
+class Block: public Statement{
 public:
     list<Definition*>* m_definitions;
     Block(list<Definition*>* list){
         m_definitions = list;
     }
 };
-class Query: Statement{
+class Query:public  Statement{
 public:
     Block* m_block;
     Token* m_token;
@@ -60,7 +68,7 @@ public:
         m_token = iden;
     }
 };
-class Expression: Statement{
+class Expression:public  Statement{
 public:
     Command* m_command;
     Type* m_type;
@@ -94,11 +102,12 @@ public:
     static void match(Token* token, TokenType type,const string& str);
     explicit StatementParser(list<Token*>* tokens);
     ~StatementParser();
-    Expression* next();
+    Statement* next();
     int isFinished();
     Expression* createExpression(Token* token);
     Query* createQuery();
     Block* createBlock();
+    Loader* createLoad();
     Definition* createDefinition();
 
 };
