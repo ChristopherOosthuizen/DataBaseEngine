@@ -38,7 +38,8 @@ Statement *StatementParser::next() {
         case TokenType::EDIT:
             return createExpression( token);
         case TokenType::LOAD:
-            return createLoad();
+        case TokenType::SAVE:
+            return createLoad(token);
     }
     throwError("UNKNOWN command",token);
     return nullptr;
@@ -116,11 +117,10 @@ Token *StatementParser::advance(TokenType ignore) {
     return token;
 }
 
-Loader *StatementParser::createLoad() {
+Loader *StatementParser::createLoad(Token* origin) {
     Token* token = advance();
     match(token,TokenType::STRING,"uNKOWN type");
-
-    return new Loader(token);
+    return new Loader(origin,token);
 }
 
 Token *StatementParser::back() {

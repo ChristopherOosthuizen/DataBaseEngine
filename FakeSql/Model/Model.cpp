@@ -8,6 +8,7 @@ Model::Model(Expression *expression) {
     m_name = expression->m_query->m_token->m_symbol;
     m_objects = new list<DataObject*>;
     for(const auto& del: *expression->m_query->m_block->m_definitions){
+        m_keys[del->m_iden->m_symbol] = del->m_val->m_token->m_symbol;
         m_values[del->m_iden->m_symbol] = new BTree(3);
     }
 }
@@ -48,4 +49,13 @@ list<DataObject*>* Model::search(Query *query) {
         }
     }
     return objects;
+}
+
+string Model::toString() {
+    string result = "CREATE MODEL "+m_name+"{";
+    for(auto del : m_keys){
+        result += del.first+":"+del.second+";";
+    }
+    result+="}";
+    return result;
 }

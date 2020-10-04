@@ -16,7 +16,12 @@ string Instance::handle(Statement *statement) {
                 return "FAILED UNKOWN COMMAND";
         }
     }else if(Loader* loader = dynamic_cast<Loader*>(statement)){
-        return handleLoad(loader);
+        switch(loader->m_command->m_type) {
+            case TokenType::LOAD:
+                return handleLoad(loader);
+            default:
+                return handleSave(loader);
+        }
     }
     else{
         return "UNKOWN STATEMENT";
@@ -90,4 +95,19 @@ void Instance::readFromFile(string adress,string* result) {
         }
         myfile.close();
     }
+}
+
+string Instance::handleSave(Loader *load) {
+    string result;
+    for(auto del: m_models){
+        result+=del.second->toString()+'\n';
+        for(auto dells: *del.second->m_objects){
+            result += "CREATE OBJECT "+del.second->m_name+dells->toString()+'\n';
+        }
+    }
+    ofstream file;
+    file.open(load->m_address->m_symbol);
+    file<<result;
+    file.close();
+    return "SAVED DATABASE";
 }

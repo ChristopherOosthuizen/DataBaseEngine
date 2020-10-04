@@ -10,8 +10,8 @@
 using namespace std;
 
 class Literal{
-    TokenType m_type;
 public:
+    TokenType m_type;
     Literal(Definition* definition);
 
     int m_key;
@@ -23,6 +23,7 @@ public:
     DataObject(Query* query);
 
     map<string,Literal*> m_definitions;
+    string toString();
 };
 
 

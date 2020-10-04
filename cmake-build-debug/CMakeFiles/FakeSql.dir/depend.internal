@@ -38,12 +38,11 @@ CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.obj
  C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentRunner/Instance.cpp
  C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentRunner/Instance.h
 CMakeFiles/FakeSql.dir/main.cpp.obj
+ ../FakeSql/Model/DataObject.h
  ../FakeSql/Model/Model.h
+ ../FakeSql/Model/bTree.h
+ ../FakeSql/Parser/Parser.h
  ../FakeSql/Server/ServSock.h
+ ../FakeSql/StatmentParser/StatementParser.h
  ../FakeSql/StatmentRunner/Instance.h
- C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/DataObject.h
- C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/Model.h
- C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/bTree.h
- C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Parser/Parser.h
- C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.h
  C:/Users/Chris/CLionProjects/DataBaseEngine/main.cpp

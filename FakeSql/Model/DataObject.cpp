@@ -26,3 +26,18 @@ DataObject::DataObject(Query *query) {
         m_definitions[del->m_iden->m_symbol] =new Literal(del);
     }
 }
+
+string DataObject::toString() {
+    string str ="{";
+    for(auto del:m_definitions){
+        string value;
+        if(del.second->m_type == TokenType::STRING){
+            value += ("\"" + del.second->m_symbol +"\"");
+        }else{
+            value = del.second->m_symbol;
+        }
+        str +=del.first+":"+value+";";
+    }
+    str+="}";
+    return str;
+}

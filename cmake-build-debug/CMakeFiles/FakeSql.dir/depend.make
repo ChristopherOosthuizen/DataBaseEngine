@@ -37,13 +37,12 @@ CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj: ..\FakeSql\Statm
 CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj: ..\FakeSql\StatmentRunner\Instance.cpp
 CMakeFiles\FakeSql.dir\FakeSql\StatmentRunner\Instance.cpp.obj: ..\FakeSql\StatmentRunner\Instance.h
 
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\Model.h
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Server\ServSock.h
-CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\StatmentRunner\Instance.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\DataObject.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\Model.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Model\bTree.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Parser\Parser.h
+CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\Server\ServSock.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\StatmentParser\StatementParser.h
+CMakeFiles\FakeSql.dir\main.cpp.obj: ..\FakeSql\StatmentRunner\Instance.h
 CMakeFiles\FakeSql.dir\main.cpp.obj: ..\main.cpp
 

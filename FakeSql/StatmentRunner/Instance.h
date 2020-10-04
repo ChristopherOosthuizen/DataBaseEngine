@@ -17,6 +17,7 @@ public:
     string handleCreate(Expression* expression);
     string handleSearch(Expression* expression);
     string handleLoad(Loader* load);
+    string handleSave(Loader* load);
     void readFromFile(string adress,string* result);
 };
 

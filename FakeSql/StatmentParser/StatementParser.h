@@ -30,11 +30,11 @@ public:
 };
 class  Loader: public Statement{
 public:
+    Token* m_command;
     Token* m_address;
-    explicit Loader(Token* address){
-
+    explicit Loader(Token* command,Token* address){
+        m_command = command;
         m_address = address;
-
     }
 };
 class Type: public Statement{
@@ -108,7 +108,7 @@ public:
     Expression* createExpression(Token* token);
     Query* createQuery();
     Block* createBlock();
-    Loader* createLoad();
+    Loader* createLoad(Token* origin);
     Definition* createDefinition();
 
 };
