@@ -100,9 +100,11 @@ void Instance::readFromFile(string adress,string* result) {
 string Instance::handleSave(Loader *load) {
     string result;
     for(auto del: m_models){
-        result+=del.second->toString()+'\n';
-        for(auto dells: *del.second->m_objects){
-            result += "CREATE OBJECT "+del.second->m_name+dells->toString()+'\n';
+        if(del.second!=NULL) {
+            result += del.second->toString() + '\n';
+            for (auto dells: *del.second->m_objects) {
+                result += "CREATE OBJECT " + del.second->m_name + dells->toString() + '\n';
+            }
         }
     }
     ofstream file;

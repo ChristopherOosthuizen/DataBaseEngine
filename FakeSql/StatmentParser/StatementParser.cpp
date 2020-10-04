@@ -73,7 +73,7 @@ Block* StatementParser::createBlock() {
     return new Block(definitions);
 }
 int StatementParser::isFinished() {
-    int result = (m_it) == --m_tokens->end() ||(m_it) == m_tokens->end();
+    int result = (m_it) == m_tokens->end()||(m_it) == --m_tokens->end() ;
     return result;
 }
 

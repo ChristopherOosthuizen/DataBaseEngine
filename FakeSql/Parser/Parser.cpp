@@ -52,6 +52,7 @@ Token* Parser::next() {
 }
 Token* Parser::findNumber(char c) {
     string result;
+    result +=c;
     while(peek() !=0 && ((peek() >='0'&&peek() <='9'))){
         result +=advance();
     }
@@ -104,7 +105,7 @@ char Parser::peek() {
 
 
 int Parser::isDone(){
-    return m_isDone;
+    return m_isDone|| (m_content->length() <=m_curr);
 }
 
 Token::Token(string symbol, TokenType type, int id,int line,int pos) {

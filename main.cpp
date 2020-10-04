@@ -31,8 +31,14 @@ void handleConnection(SOCKET sock,Instance* instance){
             tokens->push_back(token);
         }
             StatementParser stat(tokens);
-            Statement* expression = stat.next();
+
+        if(!stat.isFinished()) {
+            Statement *expression = stat.next();
             ServSock::write(sock,instance->handle(expression));
+        }
+        else
+            ServSock::write(sock,"No input");
+
         }catch(string& e ){
             ServSock::write(sock,"\n"+e+"\n");
         }
