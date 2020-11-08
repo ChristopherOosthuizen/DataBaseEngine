@@ -8,6 +8,17 @@
 #include <map>
  enum class TokenType{IDEN,NUM,STRINGIDEN,STRING,BOOLIDEN,BOOL,MODEL,OPENING_BRACE,CLOSING_BRACE,DATA_OBJECT,NEW_LINE,SEMICOLIN,COLIN,DOUBLE,CREATE,DELETE,EDIT,SEARCH,LOAD,SAVE};
 using namespace std;
+class Token{
+
+public:
+    int m_id;
+    int m_line;
+    int m_pos;
+    string m_symbol;
+    TokenType m_type;
+    Token(string symbol,TokenType type,int id,int line,int pos);
+    void toString();
+};
 class Parser {
     string* m_content;
     int m_curr;
@@ -29,17 +40,6 @@ public:
     int isDone();
 
 
-};
-class Token{
-
-public:
-    int m_id;
-    int m_line;
-    int m_pos;
-    string m_symbol;
-    TokenType m_type;
-    Token(string symbol,TokenType type,int id,int line,int pos);
-    void toString();
 };
 
 #endif //FAKESQL_PARSER_H

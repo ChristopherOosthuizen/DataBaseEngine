@@ -3,7 +3,7 @@
 //
 
 #include "Model.h"
-
+#include <algorithm>
 Model::Model(Expression *expression) {
     m_name = expression->m_query->m_token->m_symbol;
     m_objects = new list<DataObject*>;

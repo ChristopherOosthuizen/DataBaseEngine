@@ -4,164 +4,160 @@
 	<Project>
 		<Option title="gtest"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\FakeSql\;CMake Files\lib\;CMake Files\lib\googletest\;CMake Files\lib\googletest\googlemock\;CMake Files\lib\googletest\googlemock\cmake\;CMake Files\lib\googletest\googletest\;CMake Files\lib\googletest\googletest\cmake\;CMake Files\tst\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
+				<Option working_dir="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest">
-				<Option output="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/gtestd.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/include"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 gtest"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="gtest/fast">
-				<Option output="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/gtestd.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/include"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 gtest/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/gtest_maind.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
+				<Option output="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/include"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/FakeSql"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/include"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 gtest_main"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/gtest_maind.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
+				<Option output="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/include"/>
-					<Add directory="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/FakeSql"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/include"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\Chris\CLionProjects\DataBaseEngine\cmake-build-debug\lib\googletest\googletest\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chris/Projects/DataBaseEngine/FakeSql"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/include"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/chris/Projects/DataBaseEngine/FakeSql"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/include"/>
+					<Add directory="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/src/gtest-all.cc">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/src/gtest_main.cc">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/FakeSql/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\FakeSql\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googlemock/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest\googlemock\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/cmake/Config.cmake.in">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/cmake/Config.cmake.in">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/cmake/gtest.pc.in">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/lib/googletest/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="C:/Users/Chris/CLionProjects/DataBaseEngine/tst/CMakeLists.txt">
+		<Unit filename="/home/chris/Projects/DataBaseEngine/tst/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tst\"/>
 		</Unit>
 	</Project>

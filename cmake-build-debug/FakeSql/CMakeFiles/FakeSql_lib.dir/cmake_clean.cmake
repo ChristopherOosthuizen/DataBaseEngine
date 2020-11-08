@@ -1,13 +1,14 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/FakeSql_lib.dir/Model/DataObject.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/Model/Model.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/Model/bTree.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/Parser/Parser.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/Server/ServSock.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/StatmentParser/StatementParser.cpp.obj"
-  "CMakeFiles/FakeSql_lib.dir/StatmentRunner/Instance.cpp.obj"
-  "FakeSql_lib.lib"
-  "FakeSql_lib.pdb"
+  "CMakeFiles/FakeSql_lib.dir/Model/DataObject.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/Model/Model.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/Model/bTree.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/Parser/Parser.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/Server/ServSock.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/StatmentParser/StatementParser.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/StatmentRunner/Instance.cpp.o"
+  "CMakeFiles/FakeSql_lib.dir/main.cpp.o"
+  "libFakeSql_lib.a"
+  "libFakeSql_lib.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

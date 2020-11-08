@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/Chris/CLionProjects/DataBaseEngine/lib/googletest/googletest
-# Build directory: C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest
+# Source directory: /home/chris/Projects/DataBaseEngine/lib/googletest/googletest
+# Build directory: /home/chris/Projects/DataBaseEngine/cmake-build-debug/lib/googletest/googletest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

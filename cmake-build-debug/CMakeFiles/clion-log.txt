@@ -1,4 +1,4 @@
-C:\Users\Chris\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\Chris\CLionProjects\DataBaseEngine
+/home/chris/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/chris/Projects/DataBaseEngine
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug
+-- Build files have been written to: /home/chris/Projects/DataBaseEngine/cmake-build-debug

@@ -1,14 +1,13 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/FakeSql_run.dir/Model/DataObject.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/Model/Model.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/Model/bTree.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/Parser/Parser.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/Server/ServSock.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/StatmentParser/StatementParser.cpp.obj"
-  "CMakeFiles/FakeSql_run.dir/StatmentRunner/Instance.cpp.obj"
-  "FakeSql_run.exe"
-  "FakeSql_run.exe.manifest"
-  "FakeSql_run.lib"
+  "CMakeFiles/FakeSql_run.dir/Model/DataObject.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/Model/Model.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/Model/bTree.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/Parser/Parser.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/Server/ServSock.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/StatmentParser/StatementParser.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/StatmentRunner/Instance.cpp.o"
+  "CMakeFiles/FakeSql_run.dir/main.cpp.o"
+  "FakeSql_run"
   "FakeSql_run.pdb"
 )
 

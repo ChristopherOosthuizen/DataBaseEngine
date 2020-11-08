@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/DataObject.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/Model.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Model/bTree.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Parser/Parser.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/Server/ServSock.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Server/ServSock.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/FakeSql/StatmentRunner/Instance.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.obj"
-  "C:/Users/Chris/CLionProjects/DataBaseEngine/main.cpp" "C:/Users/Chris/CLionProjects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/main.cpp.obj"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/Model/DataObject.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/DataObject.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/Model/Model.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/Model.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/Model/bTree.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Model/bTree.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/Parser/Parser.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Parser/Parser.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/Server/ServSock.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/Server/ServSock.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/StatmentParser/StatementParser.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/StatmentParser/StatementParser.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/StatmentRunner/Instance.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/StatmentRunner/Instance.cpp.o"
+  "/home/chris/Projects/DataBaseEngine/FakeSql/main.cpp" "/home/chris/Projects/DataBaseEngine/cmake-build-debug/CMakeFiles/FakeSql.dir/FakeSql/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

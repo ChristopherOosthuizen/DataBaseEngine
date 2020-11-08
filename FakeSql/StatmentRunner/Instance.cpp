@@ -79,6 +79,7 @@ string Instance::handleSearch(Expression *expression) {
             }
             result+="\n";
         }
+        cout<<result;
         return result;
     }
 }
@@ -99,6 +100,7 @@ void Instance::readFromFile(string adress,string* result) {
 
 string Instance::handleSave(Loader *load) {
     string result;
+    cout<<"starting save";
     for(auto del: m_models){
         if(del.second!=NULL) {
             result += del.second->toString() + '\n';

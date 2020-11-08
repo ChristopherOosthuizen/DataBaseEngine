@@ -83,7 +83,7 @@ Token* Parser::findString(){
     return new Token(result,TokenType::STRING,m_id,m_line,m_pos);
 }
 
-char Parser::advance() {
+ char Parser::advance() {
 
     if(m_isDone)
         return 0;
@@ -117,5 +117,5 @@ Token::Token(string symbol, TokenType type, int id,int line,int pos) {
 }
 
 void Token::toString() {
-    printf("ID: %d SYMBOL: %s TYPE %d LINE:%d pos:%d\n",m_id,m_symbol.c_str(),m_type,m_line,m_pos);
+    printf("ID: %d SYMBOL: %s TYPE %d LINE:%d pos:%d\n",m_id,m_symbol.c_str(),(int)m_type,m_line,m_pos);
 }

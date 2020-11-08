@@ -119,7 +119,7 @@ Token *StatementParser::advance(TokenType ignore) {
 
 Loader *StatementParser::createLoad(Token* origin) {
     Token* token = advance();
-    match(token,TokenType::STRING,"uNKOWN type");
+    match(token,TokenType::STRING,"UNKOWN type");
     return new Loader(origin,token);
 }
 
@@ -143,6 +143,8 @@ void Statement::run() {
 }
 
 Value::Value(Token *token) {
+    if(token == NULL)
+        throw string("wrong");
     switch(token->m_type){
         case TokenType::STRINGIDEN:
         case TokenType::NUM:
